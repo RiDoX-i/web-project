@@ -27,10 +27,12 @@
         </li>
       </ul>
       
-      <?php echo "".$_SESSION['login_success'];
-             if (!$_SESSION['login_success']): ?>
-        <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
-      <?php endif; ?>
+      <?php if (!$_SESSION['login_success']): ?>
+  <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
+<?php else: ?>
+  <a href="#" class="nav-link fs-5"><?= $_SESSION['username'] ?></a>
+<?php endif; ?>
+
     </div>
   </div>
 </nav>
