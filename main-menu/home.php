@@ -8,6 +8,10 @@
     <title>Home page</title>
 </head>
 <body>
+<!--HEADER-->
+    <?php require("./web-project/HF/header.php") ?>
+<!--/HEADER-->
+
     <main>
         <div class="container-fluid" id="hero-container">
             <div class="row">
@@ -156,5 +160,10 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
+    <?php require("./web-project/HF/footer.php") ?>
+    <!-- /Footer -->
+
 </body>
 </html>
