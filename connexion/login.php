@@ -28,7 +28,10 @@ try {
     echo "".$_SESSION['login_success'];
 
     // rediricting to the main page
-    header("Location: http://localhost/web-project/connexion/connexion.php");
+    if ($_SESSION['login_success'])
+        header("Location: http://localhost/web-project/main-menu/home.php");
+    else 
+        header("Location: http://localhost/web-project/connexion/connexion.php");
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
