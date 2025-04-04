@@ -80,7 +80,12 @@
     </div>
 </div>
 <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 
-<?php require("data.php");?>
+<?php
+     echo "".$_SESSION['login_success'];
+
+require("data.php");?>

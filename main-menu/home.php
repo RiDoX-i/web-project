@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="../HF/index.css">
     <link rel="stylesheet" href="./home.css">
     <title>Home page</title>
 </head>
 <body>
 <!--HEADER-->
-
+    <?php require("../HF/header.php")?>
 <!--/HEADER-->
 
     <main>
@@ -162,8 +163,9 @@
     </main>
 
     <!-- Footer -->
-    <?php require("./web-project/HF/footer.php") ?>
+    <?php require("../HF/footer.php") ?>
     <!-- /Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

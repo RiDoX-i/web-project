@@ -2,35 +2,35 @@
     session_start();
 ?>
 
-<header class="bg-dark text-white py-4"> <!-- Hauteur augmentée -->
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                
-                <!-- Logo (plus à gauche) -->
-                <div class="d-flex align-items-center logo-container">
-                <img src="/web-project/HF/logo.png" alt="Logo" width="40" height="40" class="me-2">
-                <h2 class="m-0 fw-light">Sportify</h2> <!-- fw-light pour une écriture fine -->
-                </div>
-
-                <!-- Connexion (texte simple, plus haut) -->
-                <?php if (!$_SESSION['login_success']): ?>
-                
-                    <div class="login">
-                     <a href="login.html" class="nav-link">Connexion | Inscription</a>
-                    </div>
-
-                <?php endif; ?>
-
-            </div>
-
-            <!-- Liens de navigation (centrés et plus bas) -->
-            <nav class="mt-3">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="./web-project/main-menu/home.php">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cours.php">Nos Cours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="devis.php">Demande de Devis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./web-project/contact/index.php">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-</header>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark py-2">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="../main-menu/home.php">
+      <img src="/web-project/HF/logo.png" alt="Logo" width="40" height="40" class="me-2">
+      <h2 class="m-0 fw-light fs-4">Sportify</h2>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-5">
+          <a class="nav-link fs-5" href="../main-menu/home.php">Accueil</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link fs-5" href="../activities/activities.php">Nos Cours</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link fs-5" href="../devis/devis.php">Demande de Devis</a>
+        </li>
+        <li class="nav-item mx-5">
+          <a class="nav-link fs-5" href="../contact/index.php">Contact</a>
+        </li>
+      </ul>
+      
+      <?php echo "".$_SESSION['login_success'];
+             if (!$_SESSION['login_success']): ?>
+        <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
+      <?php endif; ?>
+    </div>
+  </div>
+</nav>
