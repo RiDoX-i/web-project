@@ -2,7 +2,8 @@
 $serveur = 'localhost';
 $login = 'root';
 $pass = '';
-/// hello amigo comos istas
+
+
 try {
     // Connect to MySQL server (without specifying the database)
     $connexion = new PDO("mysql:host=$serveur", $login, $pass);
