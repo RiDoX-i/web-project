@@ -26,10 +26,10 @@
             <!-- Liens de navigation (centrés et plus bas) -->
             <nav class="mt-3">
                 <ul class="nav justify-content-center">
-                    <li class="nav-item"><a class="nav-link" href="index.php">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./web-project/main-menu/home.php">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link" href="cours.php">Nos Cours</a></li>
                     <li class="nav-item"><a class="nav-link" href="devis.php">Demande de Devis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./web-project/contact/index.php">Contact</a></li>
                 </ul>
             </nav>
         </div>
