@@ -22,7 +22,7 @@ main{
 
 /* Hero Section */
 #hero-container{
-    background-image:url("./img/pexels-amar-13583539.jpg");
+    background-image:url("./img/bg-accueil.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
@@ -51,8 +51,9 @@ main{
 #hero-text h2{
     margin-top: 10px;
     padding:10px;
+    font-weight: bold;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 #hero-text h1 span{
     color: rgb(255, 136, 0);
@@ -66,6 +67,7 @@ main{
 /*about us*/
 
 #about-us-container{
+    background-color: rgb(255, 136, 0);
     padding: 30px;
     align-items: center;
     justify-content: center;
@@ -79,7 +81,7 @@ main{
     margin:15px;
 }
 #about-us-text{
-    color: rgb(235, 235, 235);
+    color: rgb(252, 252, 252);
     padding: 20px;
     text-align: justify;
     font-size: 1.5rem;
@@ -91,14 +93,14 @@ main{
 }
 
 #about-us-txt2{
-    background-color: rgb(255, 115, 0);
+    background-color: rgb(20, 20, 20);
     
 }
 #about-us-txt2 p{
-    color: rgb(0, 0, 0);
-    padding: 20px;
+    color: rgb(255, 136, 0);
+    padding: 15px;
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight:bold;
     font-style: italic;
 }
@@ -119,7 +121,7 @@ main{
 }
 
 #services-container h2{
-    color:rgb(235, 235, 235);
+    color:rgb(255, 136, 0);
     font-size: 3rem;
     font-weight:bold;
     text-align: center;
@@ -142,7 +144,8 @@ main{
 .model-service{
     padding: 10px;
     background-color: rgb(218, 218, 218);
-    width: 300px;
+    width: 280px;
+    border-radius: 10px;
     margin-top:10px;
     display: flex;
     flex-direction: column;
@@ -171,12 +174,13 @@ main{
     font-size: 1.5rem;
     margin-top: 20px;
     justify-content: center;
+    text-align: justify;
 }
 
 /*coachs sections */
 .coachs{
     padding-top:50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -186,7 +190,7 @@ main{
 }
 
 .coachs h1{
-    color:rgb(235, 235, 235);
+    color:rgb(255, 136, 0);
     font-size: 3rem;
     font-weight:bold;
     text-align: center;
@@ -205,13 +209,12 @@ main{
     justify-content: center;
     align-items: center;
     padding: 5px;
-    padding-bottom: 20px;
 }
 
 .model-coachs{
     padding: 10px;
-    border-radius: 30px;
-    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
     width: 300px;
     margin-top:10px;
     display: flex;
@@ -228,7 +231,7 @@ main{
 }
 
 .model-coachs h3{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-size: 2rem;
     text-align: center;
     margin-top: 20px;
@@ -237,11 +240,12 @@ main{
 }
 
 .model-coachs p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-style: italic;
     margin-top: 20px;
     justify-content: center;
     text-align: justify;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     
 }
 
@@ -259,13 +263,12 @@ main{
 }
 
 .testimonies h1{
-    color:rgb(235, 235, 235);
+    color:rgb(255, 136, 0);
     font-size: 3rem;
     font-weight:bold;
     text-align: center;}
 
 .row-testimonies{
-    padding-top:15px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -291,11 +294,11 @@ main{
 .model-testimonies{
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 30px;
-    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
     margin-top: 10px;
     display: flex;
-    width: 300px;
+    width: 280px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -314,7 +317,7 @@ main{
 }
 
 .photo-name h3{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     margin-left: 15px;
     font-size: 2rem;
     text-align: center;
@@ -323,8 +326,9 @@ main{
 }
 
 .text-testimonies p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
+    font-style: italic;
     margin-top: 20px;
     justify-content: center;
 }

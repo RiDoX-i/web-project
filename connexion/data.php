@@ -3,9 +3,12 @@ $serveur = 'localhost';
 $login = 'root';
 $pass = '';
 
+<<<<<<< HEAD
 // yanis changement
 baldi changelement
 
+=======
+>>>>>>> 9f14be04c3c05ea83b497bc56e353f0e8708f1fe
 try {
     // Connect to MySQL server (without specifying the database)
     $connexion = new PDO("mysql:host=$serveur", $login, $pass);
