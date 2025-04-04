@@ -1,9 +1,3 @@
-/* Assurer que la page prend toute la hauteur et que le footer reste en bas */
-
-
-/* ================= HEADER ================= */
-
-/* Style général du header */
 header {
     height: 100px; /* Hauteur ajustée */
     background-color: #000; /* Fond noir */
