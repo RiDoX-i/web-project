@@ -1,0 +1,67 @@
+body {
+    background-image: url("bg.png");
+    background-repeat: no-repeat;       /* Prevent image repeat */
+    background-size: cover;            /* Scale image to cover the viewport */
+    background-position: center;       /* Center the image */
+    background-attachment: fixed;      /* (Optional) make the image fixed on scroll */
+  }
+  
+h3{
+  padding : 5px;
+}
+
+input{
+  font-family: "Open Sans";
+    border-radius: 5px;
+    margin : 2px;
+    width: 100%;
+    border: none;
+    background-color: rgba(211, 206, 206, 0.986);
+}
+select {
+  font-family: "Open Sans";
+  border-radius: 5px;
+  margin: 2px;
+  width: 100%;
+  border: none;
+  background-color: rgba(211, 206, 206, 0.986);
+}
+.buttons {
+    background-color: #000000;
+    color: #fff;              
+    border:none;            
+    padding: 10px 20px;       
+    border-radius:4px;       
+    font-size:16px;         
+  
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    margin-top : 10px;
+}
+  
+  .buttons:hover {
+    background-color:#fb8c00; 
+  }
+  
+
+label{
+    margin-top: 2px;
+}
+
+.form-check{
+  margin-top: 5px;
+  margin-left: 2px;
+
+}
+
+
+#block1{
+    background-color: rgb(165, 164, 164);
+}
+
+#block2{
+    background-color: rgb(165, 164, 164);
+    padding-bottom : 10px
+}
+

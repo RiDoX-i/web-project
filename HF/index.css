@@ -1,0 +1,80 @@
+/* Assurer que la page prend toute la hauteur et que le footer reste en bas */
+
+
+/* ================= HEADER ================= */
+
+/* Style général du header */
+header {
+    height: 100px; /* Hauteur ajustée */
+    background-color: #000; /* Fond noir */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Liens du header (ultra-fin) */
+.nav-link {
+    font-weight: 200; /* Texte très fin */
+    font-size: 1rem; /* Taille adaptée */
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol sur les liens */
+.nav-link:hover {
+    color: #f0a500 !important; /* Orange au survol */
+}
+
+/* Style spécifique pour "Connexion | Inscription" */
+.login a {
+    font-weight: 200; /* Texte ultra-fin */
+    font-size: 1rem; /* Taille adaptée */
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet orange au survol sur "Connexion | Inscription" */
+.login a:hover {
+    color: #f0a500 !important;
+}
+/* ================= FOOTER ================= */
+
+/* Footer bien structuré */
+.footer {
+    margin-top: auto; /* Place le footer en bas */
+    height: 120px; /* Augmente la hauteur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Fond noir */
+    text-align: center;
+    font-weight: 300; /* Texte fin */
+    padding: 20px;
+}
+
+/* Liens du footer avec une police ultra-fine */
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 200; /* Texte très fin */
+    font-size: 0.9rem; /* Taille réduite */
+}
+
+/* Texte du footer */
+.footer-text {
+    font-weight: 200; /* Texte très fin */
+    font-size: 0.9rem; /* Taille adaptée */
+}
+
+/* Espacement des icônes */
+.footer i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+/* Effet au survol */
+.footer-link:hover {
+    color: #f0a500 !important;
+}

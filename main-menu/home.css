@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-align: justify;
+    font-size: 10px;
+    font-family: "Open Sans",Poppins, Oswald, system-ui, -apple-system, 'Bebas Neue', sans-serif;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    font-size:1.5rem;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero Section */
+#hero-container{
+    background-image:url("./img/pexels-amar-13583539.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#hero-text{
+    margin:25px 0;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text h1{
+    font-size: 6rem;
+    font-weight:bold;
+    margin-top: 30px;
+    text-align:center;
+    text-align-last: center;
+}
+
+#hero-text h2{
+    margin-top: 10px;
+    padding:10px;
+    text-align: center;
+    font-size: 2rem;
+}
+#hero-text h1 span{
+    color: rgb(255, 136, 0);
+}
+
+#hero-text h2 span{
+    font-style: italic;
+    color: rgb(255, 136, 0);
+}
+
+/*about us*/
+
+#about-us-container{
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#us-row{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+}
+#about-us-text{
+    color: rgb(235, 235, 235);
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+#about-us-text h2{
+    font-size:3rem;
+    margin-bottom:5px
+
+}
+
+#about-us-txt2{
+    background-color: rgb(255, 115, 0);
+    
+}
+#about-us-txt2 p{
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: 6rem;
+    font-weight:bold;
+    font-style: italic;
+}
+
+
+
+/* services */
+#services-container{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    padding-top:50px;
+    display: flex;
+    flex-direction:column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-container h2{
+    color:rgb(235, 235, 235);
+    font-size: 3rem;
+    font-weight:bold;
+    text-align: center;
+}
+
+.row-service{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.model-service{
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    width: 300px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 0, 0);
+}
+
+.model-service img{
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.model-service h3{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.model-service p{
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/*coachs sections */
+.coachs{
+    padding-top:50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.coachs h1{
+    color:rgb(235, 235, 235);
+    font-size: 3rem;
+    font-weight:bold;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.row-coachs{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.model-coachs{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(218, 218, 218);
+    width: 300px;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.model-coachs img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.model-coachs h3{
+    color:rgb(0, 0, 0);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
+.model-coachs p{
+    font-size: 1.4rem;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+/*testimonies section*/
+
+.testimonies{
+   padding-top:50px;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.testimonies h1{
+    color:rgb(235, 235, 235);
+    font-size: 3rem;
+    font-weight:bold;
+    text-align: center;}
+
+.row-testimonies{
+    padding-top:15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 5px;
+   padding-bottom: 20px;
+
+}
+
+.row-photo-name{
+    margin: 0;
+    width: 100%;
+}
+
+.row-text-testimonies{
+    text-align: justify;
+    width: 100%;
+}
+
+.model-testimonies{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    background-color: rgb(218, 218, 218);
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-name{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo-name img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.photo-name h3{
+    color:rgb(0, 0, 0);
+    margin-left: 15px;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.text-testimonies p{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    justify-content: center;
+}
