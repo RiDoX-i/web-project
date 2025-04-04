@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-
-
 <body>
-<?php // require("header.php"); ?>
+<?php  require("../HF/header.php"); ?>
 
     <div class="container">
         <div class="row mt-5">
@@ -35,7 +33,7 @@
 
 
 
-<?php // require("footer.php"); ?>
+<?php  require("../HF/footer.php"); ?>
 </body>
 
 </html>
