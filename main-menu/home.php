@@ -9,7 +9,8 @@
 </head>
 <body>
 <!--HEADER-->
-    <?php require("./web-project/HF/header.php") ?>
+<?php require("web-project/HF/header.php") ?>
+
 <!--/HEADER-->
 
     <main>
