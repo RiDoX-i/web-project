@@ -22,7 +22,7 @@ main{
 
 /* Hero Section */
 #hero-container{
-    background-image:url("./img/bg-accueil.jpg");
+    background-image:url("../img/bg-accueil.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;

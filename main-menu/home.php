@@ -41,25 +41,25 @@
             <h2>Découvrez nos services</h1>
             <div class="row row-service">
                 <div class="col-md-3 model-service">
-                    <img src="./img/corps-esprit.jpg" class="img-fluid" alt="">
+                    <img src="../img/corps-esprit.jpg" class="img-fluid" alt="">
                     <h3>Diversté d'activités</h3>
                     <p>Libérez votre énergie tout en apaisant votre esprit grâce à nos séances mêlant effort physique et bien-être mental</p>
                 </div>
 
 
                 <div class="col-md-3 model-service">
-                    <img src="./img/programme.jpg" class="img-fluid" alt="">
+                    <img src="../img/programme.jpg" class="img-fluid" alt="">
                     <h3>Programmes personnanalisés</h3>
                     <p>Parce que chaque objectif est unique, votre programme l’est aussi : 100 % adapté à vos besoins et à votre rythme.</p>
                 </div>
 
                 <div class="col-md-3 model-service">
-                    <img src="./img/service-nutrition (2).jpg" class="img-fluid" alt="">
+                    <img src="../img/service-nutrition (2).jpg" class="img-fluid" alt="">
                     <h3>Conseils nutritionnels</h3>
                     <p>Optimisez vos résultats grâce à des conseils nutritionnels simples, efficaces et adaptés à votre style de vie.</p>
                 </div>
                 <div class="col-md-3 model-service">
-                    <img src="./img/service-suivie.jpg" class="img-fluid" alt="">
+                    <img src="../img/service-suivie.jpg" class="img-fluid" alt="">
                     <h3>Suivi de vos progrès</h3>
                     <p>Restez motivé(e) en mesurant vos progrès réels, encadré(e) par nos coachs dédiés.</p>
                 </div>
@@ -71,21 +71,21 @@
             <h1>Un mot de nos coachs</h1>
             <div class="row row-coachs">
                 <div class="col-md-4 model-coachs">
-                    <img src="./img/coach1.jpg" alt="">
+                    <img src="../img/coach1.jpg" alt="">
                     <h3>Camille Lemont</h3>
                     <p>"Passionné(e) par le sport et le bien-être, je vous accompagne dans votre transformation physique avec des séances adaptées à votre niveau et vos objectifs. Que vous souhaitiez perdre du poids, gagner en muscle ou améliorer votre endurance, je suis là pour vous guider et vous motiver à chaque étape ! 💪🔥 Réservez votre séance dès maintenant !"</p>
                 </div>
 
 
                 <div class="col-md-4 model-coachs">
-                    <img src="./img/coach2.jpg" class="img-fluid" alt="">
+                    <img src="../img/coach2.jpg" class="img-fluid" alt="">
                     <h3>Amy Taylor</h3>
                     <p>"Avec plusieurs années d’expérience en coaching sportif, j’aide mes clients à dépasser leurs limites et à atteindre leurs objectifs grâce à des entraînements personnalisés et une approche motivante. Vous voulez progresser, gagner en force et en énergie ? N’attendez plus, réservez votre séance et ensemble, atteignons vos sommets ! 🚀💥"</p>
                 </div>
 
 
                 <div class="col-md-4 model-coachs">
-                    <img src="./img/coach3.jpg" class="img-fluid" alt="">
+                    <img src="../img/coach3.jpg" class="img-fluid" alt="">
                     <h3>Laura Jones</h3>
                     <p>"Respirez, étirez, retrouvez votre équilibre… 🧘‍♀️ Avec mes séances de yoga adaptées à tous les niveaux, je vous aide à reconnecter votre corps et votre esprit. Que vous souhaitiez vous détendre, améliorer votre souplesse ou renforcer votre posture, je vous accompagne avec bienveillance. Réservez votre séance et offrez-vous un moment pour vous !"</p>
                    
@@ -101,7 +101,7 @@
                 <div class="col-md-5   model-testimonies ">
                     <div class="row row-photo-name">
                         <div class="col-md-12  photo-name">
-                            <img src="./img/testimony1 .jpg" class="img-fluid" alt="">
+                            <img src="../img/testimony1 .jpg" class="img-fluid" alt="">
                             <h3>Frank Mathieu</h3>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                 <div class="col-md-5 model-testimonies">
                     <div class="row row-photo-name">
                         <div class="col-md-12 photo-name">
-                            <img src="./img/testimony2.jpg" class="img-fluid" alt="">
+                            <img src="../img/testimony2.jpg" class="img-fluid" alt="">
                             <h3>Jane Hans</h3>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                 <div class="col-md-5 model-testimonies">
                     <div class="row row-photo-name">
                         <div class="col-md-12 photo-name">
-                            <img src="./img/testimony3.jpg" class="img-fluid" alt="" >
+                            <img src="../img/testimony3.jpg" class="img-fluid" alt="" >
                             <h3>Zack Martins</h3>
                         </div>
                     </div>
@@ -147,7 +147,7 @@
                 <div class="col-md-5 model-testimonies">
                     <div class="row row-photo-name">
                         <div class="col-sm-12 photo-name">
-                            <img src="./img/testimony4.jpg" class="img-fluid" alt="">
+                            <img src="../img/testimony4.jpg" class="img-fluid" alt="">
                             <h3>Sara Connors</h3>
                         </div>
                     </div>
