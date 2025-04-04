@@ -4,6 +4,7 @@ $login = 'root';
 $pass = '';
 
 // yanis changement
+baldi changelement
 
 try {
     // Connect to MySQL server (without specifying the database)
