@@ -85,4 +85,7 @@
 </body>
 </html>
 
-<?php require("data.php");?>
+<?php
+     echo "".$_SESSION['login_success'];
+
+require("data.php");?>

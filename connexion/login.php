@@ -16,17 +16,19 @@ try {
     $reponse = $connexion->query("SELECT * FROM account");
 
     // this checks avery line of the data base if it find the right one
+    session_start();
+
     $_SESSION['login_success'] = false;
     while ($donnees = $reponse->fetch()){
         if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password)
-            session_start();
             $_SESSION['login_success'] = true;
             $_SESSION['username'] = $donnees["prenom"];
         }
 
+    echo "".$_SESSION['login_success'];
 
     // rediricting to the main page
-    header("Location: http://localhost/web-project/main-menu/home.php");
+    header("Location: http://localhost/web-project/connexion/connexion.php");
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();

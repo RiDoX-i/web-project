@@ -26,7 +26,9 @@
           <a class="nav-link fs-5" href="../contact/index.php">Contact</a>
         </li>
       </ul>
-      <?php if ($_SESSION['login_success']): ?>
+      
+      <?php echo "".$_SESSION['login_success'];
+             if (!$_SESSION['login_success']): ?>
         <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
       <?php endif; ?>
     </div>
