@@ -3,7 +3,7 @@ $serveur = 'localhost';
 $login = 'root';
 $pass = '';
 
-// yanis changement
+// yanis
 
 try {
     // Connect to MySQL server (without specifying the database)
