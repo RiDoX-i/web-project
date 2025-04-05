@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   
     <?php require("../HF/header.php")?>
 
     <main class="container">
@@ -19,27 +18,26 @@
             <div class="col-md-6 form-container">
                 <h3 class="text-center">Vos Cordonnées</h3>
                 <form action="contact_mail.php" method="POST">
-    <label for="name">Nom :</label>
-    <input type="text" id="name" name="name" required>
-  
-    <label for="fname">Prénom :</label>
-    <input type="text" id="fname" name="fname" required>
-  
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-  
-    <label for="phone">Téléphone :</label>
-    <input type="tel" id="phone" name="phone" required>
-  
-    <label for="contact">Message</label>
-    <textarea id="contact" name="message" placeholder="Votre message" required></textarea>
-  
-    <div class="buttons-container">
-        <button type="reset" class="buttons">Effacer</button>
-        <button type="submit" class="buttons">Envoyer la demande</button>
-    </div>
-</form>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="fname">Prénom :</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="contact">Message</label>
+                    <textarea id="contact" name="message" placeholder="Votre message" required></textarea>
+
+                    <div class="buttons-container">
+                        <button type="reset" class="buttons">Effacer</button>
+                        <button type="submit" class="buttons">Envoyer la demande</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>

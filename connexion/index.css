@@ -1,7 +1,5 @@
-/* Resetting basic styles */
 body, html {
-
-  background-image: url("bg.png"); /* Background image */
+  background-image: url("bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -9,46 +7,41 @@ body, html {
   color: white;
 }
 
-/* Ensuring there is no space between labels and inputs */
 form label {
   display: block;
   font-weight: bold;
-  font-size: 1rem; /* Set font size to be consistent */
+  font-size: 1rem;
 }
 
-/* Ensure inputs and textarea don't have unnecessary margins */
 input, textarea, select {
   background-color: #333;
   color: white;
   border: 1px solid #555;
   border-radius: 5px;
   padding: 8px;
-  margin-bottom: 8px; /* Keep a small space between the inputs */
   width: 100%;
-  box-sizing: border-box; /* Prevent overflow issues */
+  box-sizing: border-box;
 }
 
-/* Styling for the submit buttons */
-input[type="submit"] {
-  background-color: #333; /* Black by default */
+input[type="submit"], .buttons {
+  background-color: #333;
   color: #fff;
   border: none;
   padding: 12px 25px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth color transition */
-  width: 100%; /* Make button full width */
-  box-sizing: border-box; /* Prevent overflow issues */
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-input[type="submit"]:hover {
-  background-color: #ff9800; /* Orange when hovered */
+input[type="submit"]:hover, .buttons:hover {
+  background-color: #ff9800;
 }
 
-/* Navigation links */
 .nav-link, .login a {
-  font-weight: 200; /* Ultra-thin text */
+  font-weight: 200;
   font-size: 1.2rem;
   color: white !important;
   text-decoration: none;
@@ -56,78 +49,74 @@ input[type="submit"]:hover {
 }
 
 .nav-link:hover, .login a:hover {
-  color: #f0a500 !important; /* Orange on hover */
+  color: #f0a500 !important;
 }
 
-/* Main container */
 main {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align to top */
+  align-items: flex-start;
   width: 100%;
-  box-sizing: border-box; /* Prevent overflow issues */
+  box-sizing: border-box;
 }
 
-/* Styling for the form containers */
 #block1, #block2 {
-  max-width: 600px; /* Make the blocks wider for better readability */
-  background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+  max-width: 600px;
+  background-color: rgba(34, 34, 34, 0.9);
   padding: 25px;
   margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   width: 100%;
-  box-sizing: border-box; /* Prevent overflow issues */
+  box-sizing: border-box;
 }
 
-
-
-/* Add spacing between the blocks */
-#block2 {
-}
-
-/* Text styling for headers */
 h3, h6 {
   text-align: center;
   color: #fff;
 }
 
-/* Smaller text for the "Pas de compte ?" */
 #block2 h6 {
   color: #bbb;
 }
 
-/* Flexbox layout for the buttons */
 .buttons-container {
   display: flex;
-  justify-content: space-between; /* Position buttons on opposite sides */
-  gap: 10px; /* Small gap between the buttons */
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Media queries for responsiveness */
+form input, form textarea {
+  margin-bottom: 15px; /* Space between inputs and buttons */
+}
+
+.buttons-container button {
+  margin-top: 15px; /* Space between the buttons and inputs */
+}
+
 @media (max-width: 768px) {
   #block1, #block2 {
-      max-width: 100%; /* Full width on smaller screens */
-      padding: 15px; /* Adjust padding on smaller screens */
+      max-width: 100%;
+      padding: 15px;
   }
 
   .buttons-container {
-      flex-direction: column; /* Stack buttons vertically on smaller screens */
-      gap: 15px; /* Larger gap between buttons */
+      flex-direction: column;
+      gap: 15px;
   }
 
   input[type="submit"] {
-      width: auto; /* Let buttons resize naturally */
+      width: auto;
   }
 }
 
 @media (max-width: 480px) {
   #block1, #block2 {
-      padding: 10px; /* More compact padding on very small screens */
+      padding: 10px;
   }
 
   h3 {
-      font-size: 1.5rem; /* Reduce the font size of the headers */
+      font-size: 1.5rem;
   }
 }
