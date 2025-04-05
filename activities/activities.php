@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./activities.css">
     <link rel="stylesheet" href="../HF/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities</title>
+    <title>Activities page</title>
 </head>
 <body>
   <?php require("../HF/header.php") ?>
