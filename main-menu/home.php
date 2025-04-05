@@ -154,7 +154,7 @@
 
                     <div class="row row-text-testimonies">
                         <div class="col-md-12 text-testimonies">
-                            <p>""Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !</p>
+                            <p>"Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !"</p>
                         </div>
                     </div>
                 </div>

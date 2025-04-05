@@ -88,8 +88,7 @@
 <?php
 require("../HF/footer.php") ;
 
-// Option 1: Using var_dump
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 
 require("data.php");

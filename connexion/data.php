@@ -14,7 +14,7 @@ try {
     // Create the database if it doesn't exist
     $sql = "CREATE DATABASE IF NOT EXISTS $databaseName";
     $connexion->exec($sql);
-    echo "Database has been created.<br>";
+ //   echo "Database has been created.<br>";
     
     // Select the database
     $connexion->exec("USE $databaseName");
@@ -33,7 +33,7 @@ try {
                 mot_de_passe VARCHAR(40)
             )";
     $connexion->exec($sql);
-    echo "Table has been created.";
+    //echo "Table has been created.";
     
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
