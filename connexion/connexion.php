@@ -86,7 +86,8 @@
 </html>
 
 <?php
+// Option 1: Using var_dump
+var_dump($_SESSION);
 
-echo " the user name :".$_SESSION["username"];
 
 require("data.php");?>

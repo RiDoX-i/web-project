@@ -1,4 +1,6 @@
 <?php
+session_start(); 
+
 $serveur = 'localhost';
 $login = 'root';
 $pass = '';
@@ -16,6 +18,7 @@ try {
     $reponse = $connexion->query("SELECT * FROM account");
 
     $_SESSION['login_success'] = false;
+
     while ($donnees = $reponse->fetch()) {
         if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password) {
             $_SESSION['login_success'] = true;
@@ -24,13 +27,13 @@ try {
         }
     }
 
-    // rediricting to the main page
-    if ($_SESSION['login_success'])
+    if ($_SESSION['login_success']) {
+        header("Location: http://localhost/web-project/main-menu/home.php");
+    } else {
         header("Location: http://localhost/web-project/connexion/connexion.php");
-    else 
-        header("Location: http://localhost/web-project/connexion/connexion.php");
+    }
 
-} catch(PDOException $e) {
+} catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 ?>
