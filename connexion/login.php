@@ -1,7 +1,7 @@
 <?php
 $serveur = 'localhost';
 $login = 'root';
-$pass = '';
+$pass = 'root';
 $dataBaseName = "Sportify_data_base";
 
 try {

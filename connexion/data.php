@@ -1,7 +1,7 @@
 <?php
 $serveur = 'localhost';
 $login = 'root';
-$pass = '';
+$pass = 'root';
 
 try {
     // Connect to MySQL server (without specifying the database)
