@@ -30,7 +30,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <h2>A propos de Sportify</h2>
-            <p>Nous sommes une équipe de passionnés de sport, dédiée à vous aider à atteindre vos objectifs de fitness...</p>
+            <p>Nous sommes une équipe de passionnés de sport, dédiée à vous aider à atteindre vos objectifs de fitness. Que vous soyez débutant ou athlète confirmé, nous avons les ressources et l'expertise pour vous accompagner.</p>
           </div>
           <div class="col-lg-6" id="about-us-txt2">
             <p>Rejoins l'équipe</p>
@@ -52,6 +52,29 @@
             </div>
           </div>
           <!-- Add the other 3 services in the same structure -->
+          <div class="col-md-6 col-lg-3">
+            <div class="model-service text-center">
+                <img src="../img/programme.jpg" class="img-fluid" alt="">
+                <h3>Programmes personnanalisés</h3>
+                <p>Parce que chaque objectif est unique, votre programme l’est aussi : 100 % adapté à vos besoins et à votre rythme.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="model-service text-center">
+            <img src="../img/service-suivie.jpg" class="img-fluid" alt="">
+            <h3>Suivi de vos progrès</h3>
+            <p>Restez motivé(e) en mesurant vos progrès réels, encadré(e) par nos coachs dédiés.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="model-service text-center">
+            <img src="../img/service-nutrition (2).jpg" class="img-fluid" alt="">
+            <h3>Conseils nutritionnels</h3>
+            <p>Optimisez vos résultats grâce à des conseils nutritionnels simples, efficaces et adaptés à votre style de vie.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -63,12 +86,28 @@
           <!-- Repeat for each coach -->
           <div class="col-md-6 col-lg-4">
             <div class="model-coachs text-center">
-              <img src="../img/coach1.jpg" alt="">
-              <h3>Camille Lemont</h3>
-              <p>"Passionné(e) par le sport et le bien-être..."</p>
+            <img src="../img/coach1.jpg" alt="">
+            <h3>Camille Lemont</h3>
+            <p>"Passionné(e) par le sport et le bien-être, je vous accompagne dans votre transformation physique avec des séances adaptées à votre niveau et vos objectifs. Que vous souhaitiez perdre du poids, gagner en muscle ou améliorer votre endurance, je suis là pour vous guider et vous motiver à chaque étape ! 💪🔥 Réservez votre séance dès maintenant !"</p>
             </div>
           </div>
           <!-- Add 2 more coachs here -->
+          <div class="col-md-6 col-lg-4">
+            <div class="model-coachs text-center">
+              <img src="../img/coach2.jpg" class="img-fluid" alt="">
+              <h3>Amy Taylor</h3>
+              <p>"Avec plusieurs années d’expérience en coaching sportif, j’aide mes clients à dépasser leurs limites et à atteindre leurs objectifs grâce à des entraînements personnalisés et une approche motivante. Vous voulez progresser, gagner en force et en énergie ? N’attendez plus, réservez votre séance et ensemble, atteignons vos sommets ! 🚀💥"</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="model-coachs text-center">
+                <img src="../img/coach3.jpg" class="img-fluid" alt="">
+                <h3>Laura Jones</h3>
+                <p>"Respirez, étirez, retrouvez votre équilibre… 🧘‍♀️ Avec mes séances de yoga adaptées à tous les niveaux, je vous aide à reconnecter votre corps et votre esprit. Que vous souhaitiez vous détendre, améliorer votre souplesse ou renforcer votre posture, je vous accompagne avec bienveillance. Réservez votre séance et offrez-vous un moment pour vous !"</p>
+            </div>
+          </div>
+           
         </div>
       </div>
     </section>
@@ -85,6 +124,30 @@
               <p>"J’ai retrouvé confiance en moi..."</p>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="model-testimonies text-center">
+              <img src="../img/testimony1 .jpg" alt="">
+              <h3>Frank Mathieu</h3>
+              <p>"J’ai retrouvé confiance en moi..."</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="model-testimonies text-center">
+              <img src="../img/testimony1 .jpg" alt="">
+              <h3>Frank Mathieu</h3>
+              <p>"J’ai retrouvé confiance en moi..."</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-5">
+            <div class="model-testimonies text-center">
+              <img src="../img/testimony1 .jpg" alt="">
+              <h3>Frank Mathieu</h3>
+              <p>"J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant."</p>
+            </div>
+          </div>
           <!-- Add more testimonies here -->
         </div>
       </div>
@@ -95,7 +158,7 @@
 </body>
     <!-- Footer -->
     <?php require("../HF/footer.php") ?>
-    <!-- /Footer -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
