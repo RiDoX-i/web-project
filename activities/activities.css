@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image:url("./img/bg-services.jpg");
+    background-image:url("../img/bg-services.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

@@ -29,7 +29,7 @@
               <div class="carousel-item active">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/yoga-activity.jpg" alt="...">
+                    <img src="../img/yoga-activity.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Yoga</h3>
@@ -48,14 +48,14 @@
                         <option value="avance">Avancé</option>
                       </select>
                     </form>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/pilates" alt="...">
+                    <img src="../img/pilates" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Pilates</h3>
@@ -74,14 +74,14 @@
                         <option value="avance">Avancé</option>
                       </select>
                     </form>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/renforcement.jpg" alt="...">
+                    <img src="../img/renforcement.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Renforcement musculaire</h3>
@@ -92,14 +92,14 @@
                       Nombre de participants: 5 <br>
                       Places restantes: <span>5</span> <br>
                     </p>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/cycling1.jpg" alt="...">
+                    <img src="../img/cycling1.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Cycling</h3>
@@ -111,14 +111,14 @@
                       Places restantes: <span>3</span> <br>
                       Exigences: vélo d'appartement<br>
                     </p>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/fitness.jpg" alt="...">
+                    <img src="../img/fitness.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Fitness</h3>
@@ -129,14 +129,14 @@
                       Nombre de participants: 5 <br>
                       Places restantes: <span>5</span> <br>
                     </p>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/programme-personel.jpg" alt="...">
+                    <img src="../img/programme-personel.jpg" alt="...">
                   </div>
                   <div class="card-body">
                     <h3 class="card-title">Cours personnalisés</h3>
@@ -145,7 +145,7 @@
                       Durée: indéfinie <br>
                       suivi: hebdomadaire <br>
                       Assuré par: Laura Marins <br>
-                    <a href="#" class="btn">Réserver</a>
+                    <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
               </div>
