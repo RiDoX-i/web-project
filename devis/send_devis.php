@@ -1,5 +1,5 @@
 <?php
-//g
+// 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
     $name = htmlspecialchars($_POST['name']); // Nom
