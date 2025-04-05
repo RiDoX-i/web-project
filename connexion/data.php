@@ -1,14 +1,14 @@
 <?php
 $serveur = 'localhost';
 $login = 'root';
-$pass = 'root';
+$pass = '';
 
 try {
     // Connect to MySQL server (without specifying the database)
     $connexion = new PDO("mysql:host=$serveur", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Define the database name
+    // Define theddd database name
     $databaseName = "Sportify_data_base";
     
     // Create the database if it doesn't exist
