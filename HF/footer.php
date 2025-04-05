@@ -19,4 +19,4 @@
 
             <p class="m-0 small">&copy; 2025 Sportify. Tous droits réservés.</p>
         </div>
-    </footer>
+</footer>

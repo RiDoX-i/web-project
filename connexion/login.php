@@ -3,7 +3,7 @@ session_start();
 
 $serveur = 'localhost';
 $login = 'root';
-$pass = 'root';
+$pass = '';
 $dataBaseName = "Sportify_data_base";
 
 try {
