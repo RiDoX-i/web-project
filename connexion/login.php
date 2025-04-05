@@ -19,11 +19,13 @@ try {
     session_start();
 
     $_SESSION['login_success'] = false;
-    while ($donnees = $reponse->fetch()){
-        if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password)
+    while ($donnees = $reponse->fetch()) {
+        if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password) {
             $_SESSION['login_success'] = true;
             $_SESSION['username'] = $donnees["prenom"];
         }
+    }
+    
 
     echo "".$_SESSION['login_success'];
 
