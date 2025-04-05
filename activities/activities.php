@@ -40,8 +40,10 @@
                       Encadré par: Michelle Legrand <br>
                       Nombre de participants: 5 <br>
                       Places restantes: <span>5</span> <br>
+                      Côut de la scéance: <br>
                     </p>
                     <form action="" method="post">
+                      <label for="niveau">selectioner votre niveau</label>
                       <select name="niveau" id="id-niveau">
                         <option value="debutant">Débutant</option>
                         <option value="intermediaire">Intermédiaire</option>
@@ -66,8 +68,10 @@
                       Encadré par: Marion May <br>
                       Nombre de participants: 3 <br>
                       Places restantes: <span>3</span> <br>
+                      Côut de la scéance: <br>
                     </p>
                     <form action="" method="post">
+                      <label for="niveau">selectioner votre niveau</label>
                       <select name="niveau" id="id-niveau" >
                         <option value="debutant">Débutant</option>
                         <option value="intermediaire">Intermédiaire</option>
@@ -91,6 +95,7 @@
                       Encadré par: Camille Lemont <br>
                       Nombre de participants: 5 <br>
                       Places restantes: <span>5</span> <br>
+                      Côut de la scéance: <br>
                     </p>
                     <a href="#" class="btn">S'inscrire</a>
                   </div>
@@ -110,6 +115,7 @@
                       Nombre de participants: 3 <br>
                       Places restantes: <span>3</span> <br>
                       Exigences: vélo d'appartement<br>
+                      Côut de la scéance: <br>
                     </p>
                     <a href="#" class="btn">S'inscrire</a>
                   </div>
@@ -128,6 +134,7 @@
                       Encadré par: Laura Jones <br>
                       Nombre de participants: 5 <br>
                       Places restantes: <span>5</span> <br>
+                      Côut de la scéance: <br>
                     </p>
                     <a href="#" class="btn">S'inscrire</a>
                   </div>
@@ -145,6 +152,7 @@
                       Durée: indéfinie <br>
                       suivi: hebdomadaire <br>
                       Assuré par: Laura Marins <br>
+                      Côut de la scéance: <br>
                     <a href="#" class="btn">S'inscrire</a>
                   </div>
                 </div>
