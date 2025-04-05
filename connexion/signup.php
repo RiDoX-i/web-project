@@ -23,7 +23,7 @@ try {
     // checking if the email already exists
 
     $reponse = $connexion->query("SELECT * FROM account");
-    $exists = true;
+    $exists = false;
     while ($donnees = $reponse->fetch()){
         if ($donnees["email"] == $email){
             $exists=true;
@@ -58,6 +58,7 @@ try {
     }
     }else
         echo "an account already exists with same @ email";
+        
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }

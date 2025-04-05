@@ -87,4 +87,6 @@
 
 <?php
 
+echo " the user name :".$_SESSION["username"];
+
 require("data.php");?>

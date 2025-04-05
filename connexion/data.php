@@ -34,7 +34,7 @@ try {
             )";
     $connexion->exec($sql);
     echo "Table has been created.";
-
+    
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
 }

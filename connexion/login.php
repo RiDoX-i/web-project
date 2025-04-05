@@ -20,12 +20,13 @@ try {
         if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password) {
             $_SESSION['login_success'] = true;
             $_SESSION['username'] = $donnees["prenom"];
+            break;
         }
     }
 
     // rediricting to the main page
     if ($_SESSION['login_success'])
-        header("Location: http://localhost/web-project/main-menu/home.php");
+        header("Location: http://localhost/web-project/connexion/connexion.php");
     else 
         header("Location: http://localhost/web-project/connexion/connexion.php");
 
