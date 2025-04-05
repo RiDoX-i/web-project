@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -89,6 +86,5 @@
 </html>
 
 <?php
-     echo "".$_SESSION['login_success'];
 
 require("data.php");?>

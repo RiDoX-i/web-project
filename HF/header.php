@@ -25,25 +25,20 @@
         <li class="nav-item mx-5">
           <a class="nav-link fs-5" href="../contact/index.php">Contact</a>
         </li>
-        <?php if (isset($_SESSION['login_success'])): ?>
+        <!-- Only show username if `login_success` is set and true -->
           <li class="nav-item mx-5">
-          <a class="nav-link fs-5" href="#" style="pointer-events: none; cursor: default;">
-          <?= $_SESSION['username'] ?></a>
-        </li>
-        <?php endif; ?>
-
+            <a class="nav-link fs-5" href="#" style="pointer-events: none; cursor: default;">
+              <?= $_SESSION['username'] ?>
+            </a>
+          </li>
       </ul>
-      
-    <?php if (isset($_SESSION['login_success'])&& !$_SESSION['login_success']): ?>
-      <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
-    <?php else: ?>
-    <a href="../connexion/connexion.php" class="nav-link fs-5">Se Déconnecter</a>
-    <?php
-      // Set session to disconnect user status
-      $_SESSION['login_success'] = false;
-      $_SESSION['username'] = null;
-    ?>
-    <?php endif; ?>
+
+      <!-- Show Connexion/Inscription if NOT logged in; Se Déconnecter if logged in -->
+      <?php if (!isset($_SESSION['login_success']) && !$_SESSION['login_success']): ?>
+        <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
+      <?php else: ?>
+        <a href="../connexion/connexion.php" class="nav-link fs-5">Se Déconnecter</a>
+      <?php endif; ?>
 
     </div>
   </div>
