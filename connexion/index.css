@@ -1,67 +1,133 @@
-body {
-    background-image: url("bg.png");
-    background-repeat: no-repeat;       /* Prevent image repeat */
-    background-size: cover;            /* Scale image to cover the viewport */
-    background-position: center;       /* Center the image */
-    background-attachment: fixed;      /* (Optional) make the image fixed on scroll */
-  }
-  
-h3{
-  padding : 5px;
+/* Resetting basic styles */
+body, html {
+
+  background-image: url("bg.png"); /* Background image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
 
-input{
-  font-family: "Open Sans";
-    border-radius: 5px;
-    margin : 2px;
-    width: 100%;
-    border: none;
-    background-color: rgba(211, 206, 206, 0.986);
+/* Ensuring there is no space between labels and inputs */
+form label {
+  display: block;
+  font-weight: bold;
+  font-size: 1rem; /* Set font size to be consistent */
 }
-select {
-  font-family: "Open Sans";
+
+/* Ensure inputs and textarea don't have unnecessary margins */
+input, textarea, select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
   border-radius: 5px;
-  margin: 2px;
+  padding: 8px;
+  margin-bottom: 8px; /* Keep a small space between the inputs */
   width: 100%;
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Styling for the submit buttons */
+input[type="submit"] {
+  background-color: #333; /* Black by default */
+  color: #fff;
   border: none;
-  background-color: rgba(211, 206, 206, 0.986);
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+  width: 100%; /* Make button full width */
+  box-sizing: border-box; /* Prevent overflow issues */
 }
-.buttons {
-    background-color: #000000;
-    color: #fff;              
-    border:none;            
-    padding: 10px 20px;       
-    border-radius:4px;       
-    font-size:16px;         
-  
-    cursor: pointer;
-    transition: background-color 0.3s;
 
-    margin-top : 10px;
+input[type="submit"]:hover {
+  background-color: #ff9800; /* Orange when hovered */
 }
-  
-  .buttons:hover {
-    background-color:#fb8c00; 
+
+/* Navigation links */
+.nav-link, .login a {
+  font-weight: 200; /* Ultra-thin text */
+  font-size: 1.2rem;
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover, .login a:hover {
+  color: #f0a500 !important; /* Orange on hover */
+}
+
+/* Main container */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top */
+  width: 100%;
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+/* Styling for the form containers */
+#block1, #block2 {
+  max-width: 600px; /* Make the blocks wider for better readability */
+  background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box; /* Prevent overflow issues */
+}
+
+
+
+/* Add spacing between the blocks */
+#block2 {
+}
+
+/* Text styling for headers */
+h3, h6 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Smaller text for the "Pas de compte ?" */
+#block2 h6 {
+  color: #bbb;
+}
+
+/* Flexbox layout for the buttons */
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Position buttons on opposite sides */
+  gap: 10px; /* Small gap between the buttons */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  #block1, #block2 {
+      max-width: 100%; /* Full width on smaller screens */
+      padding: 15px; /* Adjust padding on smaller screens */
   }
-  
 
-label{
-    margin-top: 2px;
+  .buttons-container {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      gap: 15px; /* Larger gap between buttons */
+  }
+
+  input[type="submit"] {
+      width: auto; /* Let buttons resize naturally */
+  }
 }
 
-.form-check{
-  margin-top: 5px;
-  margin-left: 2px;
+@media (max-width: 480px) {
+  #block1, #block2 {
+      padding: 10px; /* More compact padding on very small screens */
+  }
 
+  h3 {
+      font-size: 1.5rem; /* Reduce the font size of the headers */
+  }
 }
-
-
-#block1{
-    background-color: rgb(165, 164, 164);
-}
-
-#block2{
-    background-color: rgb(165, 164, 164);
-    padding-bottom : 10px
-}
-
