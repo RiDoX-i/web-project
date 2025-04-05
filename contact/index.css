@@ -1,39 +1,112 @@
-body {
-    background-image: url("bg.png");
-    background-repeat: no-repeat;      
-    background-size: cover;          
-    background-position: center;       
-    background-attachment: fixed;      
-  }
-
-label{
-  color : rgba(0, 0, 0, 0.747)
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
 
-input{
-  border-radius: 5px;
-    margin : 2px;
-    width: 100%;
-    border: none;
-    background-color: rgba(211, 206, 206, 0.986);
-}
-
-
-textarea{
+textarea {
   border: none;
   border-radius: 5px;
   width: 100%;
   height: 150px;
   background-color: rgba(211, 206, 206, 0.986);
-
 }
 
+.nav-link, .login a {
+  font-weight: 200; /* Ultra-thin text */
+  font-size: 1.2rem;
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
 
+.nav-link:hover, .login a:hover {
+  color: #f0a500 !important; /* Orange on hover */
+}
 
-  #block1{
-    background-color: rgb(165, 164, 164);
-    margin-top : 100px;
-    padding: 2%;
-    border-radius: 5px;
-  }
-  
+main {
+  flex: 1;
+  padding-bottom: 50px;
+  margin-top: 0; /* Remove extra space above the main content */
+}
+
+.form-container {
+  max-width: 500px;
+  background-color: rgba(34, 34, 34, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Position buttons on opposite sides */
+}
+
+.buttons {
+  background-color: #333; /* Black by default */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+  width: 48%; /* Ensures buttons don't stretch too much */
+}
+
+.buttons:hover {
+  background-color: #ff9800; /* Orange when hovered */
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Keep the footer at the bottom */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ff9800;
+}
+
+.footer i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
