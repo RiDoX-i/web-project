@@ -25,16 +25,24 @@
         <li class="nav-item mx-5">
           <a class="nav-link fs-5" href="../contact/index.php">Contact</a>
         </li>
-
-        <li class="nav-item mx-5">
-          <a class="nav-link fs-5" href="#"   style="pointer-events: none; cursor: default;"          ><?= $_SESSION['username'] ?></a>
+        <?php if (isset($_SESSION['login_success'])): ?>
+          <li class="nav-item mx-5">
+          <a class="nav-link fs-5" href="#" style="pointer-events: none; cursor: default;">
+          <?= $_SESSION['username'] ?></a>
         </li>
+        <?php endif; ?>
+
       </ul>
       
-    <?php if (!$_SESSION['login_success']): ?>
+    <?php if (isset($_SESSION['login_success'])&& !$_SESSION['login_success']): ?>
       <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
     <?php else: ?>
     <a href="../connexion/connexion.php" class="nav-link fs-5">Se Déconnecter</a>
+    <?php
+      // Set session to disconnect user status
+      $_SESSION['login_success'] = false;
+      $_SESSION['username'] = null;
+    ?>
     <?php endif; ?>
 
     </div>
