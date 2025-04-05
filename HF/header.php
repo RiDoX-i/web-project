@@ -40,7 +40,7 @@
       <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
         <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
       <?php else: ?>
-        <a href="../connexion/connexion.php" class="nav-link fs-5">Se Déconnecter</a>
+        <a href="../connexion/disconnect.php" class="nav-link fs-5">Se Déconnecter</a>
       <?php endif; ?>
 
     </div>
