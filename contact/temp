@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+    <meta charset="UTF-8">
+    <title>Nous Contacter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css" >
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<?php  require("../HF/header.php"); ?>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div id="block1" class="col-sm-4 offset-md-4 ">
+            <h3>Contactez nous</h3>
+            <form action="contact_mail.php" method="POST">
+                <label for="fname">Nom</label>
+                <input type="text" id="fname" name="name" required>
+
+                <label for="lname">Prénom</label>
+                <input type="text" id="lname" name="surname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="contact">Message</label><br>
+                <textarea id="contact" name="message" placeholder="Votre message" required></textarea>
+                
+                <br>
+                <button type="reset" class="buttons">Effacer</button>
+                <button type="submit" class="buttons">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+
+
+
+<?php  require("../HF/footer.php"); ?>
+</body>
+
+</html>
+
+
+/* =================== GLOBAL =================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("img.jpg"); /* Remplace avec ton image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* =================== HEADER FIXE =================== */
+header {
+  height: 80px; /* Ajustement pour un design plus compact */
+  background-color: #000; /* Fond noir */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* S'assurer qu'il est au-dessus du contenu */
+  border-radius: 0; /* Supprime les bords arrondis */
+}
+
+/* =================== NAVIGATION =================== */
+.nav-link, .login a {
+  font-weight: 200; /* Texte ultra-fin */
+  font-size: 1.2rem;
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover, .login a:hover {
+  color: #f0a500 !important; /* Effet orange au survol */
+}
+
+/* =================== CONTENU PRINCIPAL =================== */
+main {
+  flex: 1; /* Permet au contenu de s'étendre */
+  margin-top: 100px; /* Laisse l’espace sous le header */
+  padding-bottom: 50px; /* Espace pour éviter que le footer ne colle */
+}
+
+/* =================== FORMULAIRE =================== */
+.form-container {
+  max-width: 500px;
+  background-color: rgba(34, 34, 34, 0.9); /* Fond semi-transparent */
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, select {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+.buttons {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons:hover {
+  background-color: #d88c00;
+}
+
+/* =================== FOOTER =================== */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Permet de garder le footer en bas */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ff9800;
+}
+
+/* Icônes dans le footer */
+.footer i {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
