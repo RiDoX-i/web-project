@@ -1,88 +1,136 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", Tahoma, Geneva, Verdana, "sans-serif", system-ui, -apple-system, 'Bebas Neue', sans-serif;
     background-color: var(--light-bg);
     color: var(--text-dark);
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3 {
-    font-weight: bold;
-  }
 
-  #hero-container {
-    background: url('../img/bg-accueil.jpg') center/cover no-repeat;
+/* Hero Section */
+#hero-container{
+    background-image:url("../img/bg-accueil.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
     min-height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#hero-text{
+    margin:25px 0;
     display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text h1{
+    font-size: 4rem;
+    font-weight:bold;
+    margin-top: 30px;
+    text-align:center;
+    text-align-last: center;
+}
+
+#hero-text h2{
+    margin-top: 10px;
+    padding:10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+#hero-text h1 span{
+    color: rgb(255, 136, 0);
+}
+
+#hero-text h2 span{
+    font-style: italic;
+    color: rgb(255, 136, 0);
+}
+
+/*about us*/
+
+#about-us-container{
+    background-color: rgb(255, 136, 0);
+    padding: 30px;
     align-items: center;
     justify-content: center;
-    color: var(--text-light);
-    text-align: center;
-    padding: 2rem;
-  }
+}
 
+#us-row{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin:15px;
+}
+#about-us-text{
+    color: rgb(252, 252, 252);
+    padding: 20px;
+    text-align: justify;
+}
+#about-us-text h2{
+    font-size:3rem;
+    margin-bottom:5px
+}
+#about-us-text p{
+    font-size:1.5rem;
+}
+#about-us-txt2{
+    background-color: rgb(20, 20, 20);
+    
+}
+#about-us-txt2 p{
+    color: rgb(255, 136, 0);
+    padding: 15px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight:bold;
+    font-style: italic;
+}
+
+
+
+/*service section*/
+
+#services-container, .coachs, .testimonies {
+align-items: center;
+justify-content: center;
+padding: 3rem 1rem;
+}
+.model-service, .model-coachs, .model-testimonies {
+align-items: center;
+justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.model-service:hover, .model-coachs:hover, .model-testimonies:hover {
+  transform: translateY(-5px);
+}
+.model-service img, .model-coachs img, .model-testimonies img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.coachs .model-coachs {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+.testimonies .model-testimonies {
+  background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
   #hero-text h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-
   #hero-text h2 {
-    font-size: 2rem;
-    color: var(--primary-color);
+    font-size: 1.5rem;
   }
-
-  #about-us-container {
-    background-color: var(--primary-color);
-    padding: 3rem 1rem;
-    color: var(--text-light);
-  }
-
-  #about-us-txt2 {
-    background-color: var(--dark-bg);
-    color: var(--primary-color);
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bold;
-    padding: 2rem;
-  }
-
-  #services-container, .coachs, .testimonies {
-    padding: 3rem 1rem;
-  }
-
-  .model-service, .model-coachs, .model-testimonies {
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-  }
-
-  .model-service:hover, .model-coachs:hover, .model-testimonies:hover {
-    transform: translateY(-5px);
-  }
-
-  .model-service img, .model-coachs img, .model-testimonies img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-  }
-
-  .coachs .model-coachs {
-    background-color: var(--dark-bg);
-    color: var(--text-light);
-  }
-
-  .testimonies .model-testimonies {
-    background-color: #f1f1f1;
-  }
-
-  @media (max-width: 768px) {
-    #hero-text h1 {
-      font-size: 2rem;
-    }
-
-    #hero-text h2 {
-      font-size: 1.5rem;
-    }
-  }
+}

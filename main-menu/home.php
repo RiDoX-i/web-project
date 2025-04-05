@@ -14,31 +14,32 @@
 <!--/HEADER-->
 
 <main>
-    <section id="hero-container">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8" id="hero-text">
-            <h1>RELEVEZ UN NOUVEAU <span class="text-warning">CHALLENGE</span> AVEC</h1>
-            <h2><span>Sportify</span></h2>
-          </div>
+    <section >
+        <div class="container-fluid" id="hero-container">
+            <div class="row">
+                <div class="col-lg-4 " id="hero-text">
+                    <h1>RELEVEZ UN NOUVEAU <span>CHALLENGE</span> AVEC</h1>
+                    <h2> <span>Sportify</span></h2>
+                </div>
+            </div>
+        </div>  
+    </section>   
+    <!-- section a propos de nous--->
+    <section>
+        <div class="container-fluid" id="about-us-container">
+            <div class="row" id="us-row">
+                <div  class="col-lg-6" id="about-us-text">
+                    <h2>A propos de Sportify</h1>
+                    <p>Nous sommes une équipe de passionnés de sport, dédiée à vous aider à atteindre vos objectifs de fitness. Que vous soyez débutant ou athlète confirmé, nous avons les ressources et l'expertise pour vous accompagner.</p>
+                </div>
+                <div class="col-lg-6" id="about-us-txt2">
+                    <p>Rejoins l'équipe</p>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="about-us-container">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h2>A propos de Sportify</h2>
-            <p>Nous sommes une équipe de passionnés de sport, dédiée à vous aider à atteindre vos objectifs de fitness. Que vous soyez débutant ou athlète confirmé, nous avons les ressources et l'expertise pour vous accompagner.</p>
-          </div>
-          <div class="col-lg-6" id="about-us-txt2">
-            <p>Rejoins l'équipe</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- section nos services--->
     <section id="services-container">
       <div class="container">
         <h2 class="text-center mb-5">Découvrez nos services</h2>
@@ -119,25 +120,25 @@
           <!-- Repeat for each testimonial -->
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
-              <img src="../img/testimony1 .jpg" alt="">
-              <h3>Frank Mathieu</h3>
-              <p>"J’ai retrouvé confiance en moi..."</p>
+                <img src="../img/testimony4.jpg" class="img-fluid" alt="">
+                <h3>Sara Connors</h3>
+                <p>"Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !"</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
-              <img src="../img/testimony1 .jpg" alt="">
-              <h3>Frank Mathieu</h3>
-              <p>"J’ai retrouvé confiance en moi..."</p>
+                <img src="../img/testimony3.jpg" class="img-fluid" alt="" >
+                <h3>Zack Martins</h3>
+                <p>"Je n’aurais jamais cru aimer autant le sport, ici tout est motivant et personnalisé."</p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
-              <img src="../img/testimony1 .jpg" alt="">
-              <h3>Frank Mathieu</h3>
-              <p>"J’ai retrouvé confiance en moi..."</p>
+                <img src="../img/testimony2.jpg" class="img-fluid" alt="">
+                <h3>Jane Hans</h3>
+                <p>"Des résultats visibles en quelques semaines, et une équipe toujours à l’écoute !"</p>
             </div>
           </div>
 
