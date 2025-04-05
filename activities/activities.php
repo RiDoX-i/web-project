@@ -9,58 +9,63 @@
     <title>Activities</title>
 </head>
 <body>
-  
   <?php require("../HF/header.php") ?>
-
   <main>
-    <div class="container-fluid " id="hero-activities">
-        <div class="row">
-            <div class="col-md-8">
-                <h1>Découvrez nos cours</h1>
-            </div>
-        </div>
-        <div id="join-us">
-            <a href="#">Rejoignez nous</a>
-        </div>
-    </div>
-
-    <!--Activities section-->
-    <div class="container" id="activities">
-    <div class="row">
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
-          <img src="../img/yoga-activity.jpg" alt="...">
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Yoga</h3>
-          <p class="card-text"> 
-            Type cours: collectif <br>
-            Durée: 1h <br>
-            Niveau: débutant, intermédiaire, avancé <br>
-            Encadré par: Michelle Legrand <br>
-            Nombre de participants: 5 <br>
-            Places restantes: <span>5</span> <br>
-            Côut de la scéance: <br>
-          </p>
-          <form action="" method="post">
-            <label for="niveau">selectioner votre niveau</label>
-            <select name="niveau" id="id-niveau">
-              <option value="debutant">Débutant</option>
-              <option value="intermediaire">Intermédiaire</option>
-              <option value="avance">Avancé</option>
-            </select>
-          </form>
-          <a href="#" class="btn">S'inscrire</a>
+  <!-- Hero Section -->
+  <div class="container-fluid py-5 text-white text-center" id="hero-activities">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="display-4 fw-bold">Découvrez nos cours</h1>
+        <div class="mt-4">
+          <a href="#" class="btn btn-light btn-lg">Rejoignez-nous</a>
         </div>
       </div>
-        
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
-          <img src="../img/pilates.jpg" alt="...">
+    </div>
+  </div>
+
+  <!-- Activities Section -->
+  <div class="container py-5" id="activities">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
+            <img src="../img/yoga-activity.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Yoga</h3>
+            <p class="card-text">
+              Type cours: collectif <br>
+              Durée: 1h <br>
+              Niveau: débutant, intermédiaire, avancé <br>
+              Encadré par: Michelle Legrand <br>
+              Nombre de participants: 5 <br>
+              Places restantes: <span>5</span> <br>
+              Côut de la scéance:
+            </p>
+            <form>
+              <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
+              <select id="niveau-yoga" class="form-select mb-3">
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+              </select>
+            </form>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
-        <div class="card-body">
-          <h3 class="card-title">Pilates</h3>
-          <p class="card-text">
+      </div>
+
+      <!-- Répète la même structure pour chaque activité -->
+      <!-- ... Pilates -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
+            <img src="../img/pilates.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Pilates</h3>
+            <p class="card-text">
             Type cours: collectif <br>
             Durée: 1h <br>
             Niveau: débutant, intermédiaire, avancé <br>
@@ -68,25 +73,26 @@
             Nombre de participants: 3 <br>
             Places restantes: <span>3</span> <br>
             Côut de la scéance: <br>
-          </p>
-          <form action="" method="post">
-            <label for="niveau">selectioner votre niveau</label>
-            <select name="niveau" id="id-niveau" >
-              <option value="debutant">Débutant</option>
-              <option value="intermediaire">Intermédiaire</option>
-              <option value="avance">Avancé</option>
-            </select>
-          </form>
-          <a href="#" class="btn">S'inscrire</a>
+            </p>
+            <form>
+              <label for="niveau-pilate" class="form-label">Sélectionnez votre niveau</label>
+              <select id="niveau-pilate" class="form-select mb-3">
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+              </select>
+            </form>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
       </div>
-       
-  
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
-          <img src="../img/renforcement.jpg" alt="...">
-        </div>
-        <div class="card-body">
+      <!-- ... Renforcement musculaire -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
+            <img src="../img/renforcement.jpg" alt="...">
+          </div>
+          <div class="card-body">
           <h3 class="card-title">Renforcement musculaire</h3>
           <p class="card-text"> 
             Type cours: collectif <br>
@@ -96,15 +102,17 @@
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
-          <a href="#" class="btn">S'inscrire</a>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
       </div>
-        
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
+      <!-- ... Cycling -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
           <img src="../img/cycling1.jpg" alt="...">
-        </div>
-        <div class="card-body ">
+          </div>
+          <div class="card-body">
           <h3 class="card-title">Cycling</h3>
           <p class="card-text">
             Type cours: collectif <br>
@@ -115,15 +123,17 @@
             Exigences: vélo d'appartement<br>
             Côut de la scéance: <br>
           </p>
-          <a href="#" class="btn">S'inscrire</a>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
       </div>
-  
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
+      <!-- ... Fitness -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
           <img src="../img/fitness.jpg" alt="...">
-        </div>
-        <div class="card-body">
+          </div>
+          <div class="card-body">
           <h3 class="card-title">Fitness</h3>
           <p class="card-text">
             Type cours: collectif <br>
@@ -133,15 +143,17 @@
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
-          <a href="#" class="btn">S'inscrire</a>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
       </div>
-    
-      <div class="card col-lg-4">
-        <div class="img-wrapper">
+      <!-- ... Cours personnalisés -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="img-wrapper">
           <img src="../img/programme-personel.jpg" alt="...">
-        </div>
-        <div class="card-body">
+          </div>
+          <div class="card-body">
           <h3 class="card-title">Cours personnalisés</h3>
           <p class="card-text">
             Type cours: inidividuel <br>
@@ -149,18 +161,21 @@
             suivi: hebdomadaire <br>
             Assuré par: Laura Marins <br>
             Côut de la scéance: <br>
-          <a href="#" class="btn">S'inscrire</a>
+          </p>
+            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+          </div>
         </div>
       </div>
-      </div>  
+      
     </div>
+  </div>
 
+  <!-- Promo Section -->
+  <div class="container-fluid bg-light text-center py-4" id="promo">
+    <p class="lead m-0">Jusqu'à 15% de réduction lors de votre première réservation !</p>
+  </div>
+</main>
 
- 
-    <div id="promo">
-      <p>Jusqu'à 15% de réduction lors de votre première réservation !</p>
-    </div>
-    </main>
         
   <?php require("../HF/footer.php") ?>
   <?php require("./data.php") ?>
