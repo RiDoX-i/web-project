@@ -1,16 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*
-html{
-    text-align: justify;
-    font-size: 10px;
-    font-family: "Open Sans",Poppins, Oswald, system-ui, -apple-system, 'Bebas Neue', sans-serif;
-}
-*/
+
 body{
+    font-family: "Open Sans",Poppins, Oswald, system-ui, -apple-system, 'Bebas Neue', sans-serif;
     background-color: rgb(20, 20, 20);
     font-size:1.5rem;
 }
