@@ -1,3 +1,9 @@
+<?php 
+    // logout the user when we enter the page
+    // the user will not have the acces to this page directly unless he desides to disconnect or access the page externally
+    $_SESSION['login_success'] = false;
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
