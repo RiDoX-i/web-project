@@ -1,3 +1,6 @@
+<?php require("./data.php") ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +42,8 @@
               Durée: 1h <br>
               Niveau: débutant, intermédiaire, avancé <br>
               Encadré par: Michelle Legrand <br>
-              Nombre de participants: 5 <br>
-              Places restantes: <span>5</span> <br>
+              Nombre maximum de participants: <?= $_SESSION['max_member_yoga']?> <br>
+              Places restantes: 5 <br>
               Côut de la scéance:
             </p>
             <form>
@@ -73,7 +76,7 @@
             Durée: 1h <br>
             Niveau: débutant, intermédiaire, avancé <br>
             Encadré par: Marion May <br>
-            Nombre de participants: 3 <br>
+            Nombre maximum de participants: <?= $_SESSION['max_member_pilates']?> <br>
             Places restantes: <span>3</span> <br>
             Côut de la scéance: <br>
             </p>
@@ -102,7 +105,7 @@
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Camille Lemont <br>
-            Nombre de participants: 5 <br>
+            Nombre maximum de participants: <?= $_SESSION['max_member_musculation']?> <br>
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
@@ -123,7 +126,7 @@
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Amy Taylor <br>
-            Nombre de participants: 3 <br>
+            Nombre maximum de participants: <?= $_SESSION['max_member_cycling']?> <br>
             Places restantes: <span>3</span> <br>
             Exigences: vélo d'appartement<br>
             Côut de la scéance: <br>
@@ -145,7 +148,7 @@
             Type cours: collectif <br>
             Durée: 1h <br>
             Encadré par: Laura Jones <br>
-            Nombre de participants: 5 <br>
+            Nombre maximum de participants: <?= $_SESSION['max_member_fitness']?> <br>
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
@@ -186,7 +189,6 @@
 
         
   <?php require("../HF/footer.php") ?>
-  <?php require("./data.php") ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  <!--<script src="./activities.js"></script>---> 
 </body>

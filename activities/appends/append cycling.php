@@ -23,7 +23,9 @@ try {
 
     echo "added successfully";
     // at this point i should call the checker memeber max num and take the true or false value
-  /*  if ($_SESSION['login_success']) {
+ 
+    // updating the reaming places table
+    /*  if ($_SESSION['login_success']) {
         header("Location: http://localhost/web-project/main-menu/home.php");
     } else {
         header("Location: http://localhost/web-project/connexion/connexion.php");
