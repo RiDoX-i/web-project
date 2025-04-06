@@ -1,0 +1,16 @@
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center; 
+}
+
+couses-report-container{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    color: red;
+}
