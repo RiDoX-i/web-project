@@ -14,7 +14,6 @@
 
 .card {
   border: none;
-  transition: transform 0.2s ease-in-out;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -28,6 +27,6 @@
 }
 
 .btn:hover {
-  background-color: #fb8c00;
+  background-color: #ff8e04;
   color: rgb(0, 0, 0);
 }

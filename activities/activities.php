@@ -1,6 +1,3 @@
-<?php require("./data.php") ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,9 +29,6 @@
       <!-- Card 1 -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-            <img src="../img/yoga-activity.jpg" class="card-img-top" alt="...">
-          </div>
           <div class="card-body">
             <h3 class="card-title">Yoga</h3>
             <p class="card-text">
@@ -42,8 +36,8 @@
               Durée: 1h <br>
               Niveau: débutant, intermédiaire, avancé <br>
               Encadré par: Michelle Legrand <br>
-              Nombre maximum de participants: <?= $_SESSION['max_member_yoga']?> <br>
-              Places restantes: 5 <br>
+              Nombre de participants: 5 <br>
+              Places restantes: <span>5</span> <br>
               Côut de la scéance:
             </p>
             <form>
@@ -66,9 +60,6 @@
       <!-- ... Pilates -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-            <img src="../img/pilates.jpg" alt="...">
-          </div>
           <div class="card-body">
             <h3 class="card-title">Pilates</h3>
             <p class="card-text">
@@ -76,10 +67,9 @@
             Durée: 1h <br>
             Niveau: débutant, intermédiaire, avancé <br>
             Encadré par: Marion May <br>
-            Nombre maximum de participants: <?= $_SESSION['max_member_pilates']?> <br>
+            Nombre de participants: 3 <br>
             Places restantes: <span>3</span> <br>
             Côut de la scéance: <br>
-            </p>
             <form>
               <label for="niveau-pilate" class="form-label">Sélectionnez votre niveau</label>
               <select id="niveau-pilate" class="form-select mb-3">
@@ -89,23 +79,20 @@
               </select>
             </form>
             <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="appends/append pilates.php" class="btn btn-primary w-100">S'inscrire</a>
+              <href="appends/append pilates.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>
       <!-- ... Renforcement musculaire -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-            <img src="../img/renforcement.jpg" alt="...">
-          </div>
           <div class="card-body">
           <h3 class="card-title">Renforcement musculaire</h3>
           <p class="card-text"> 
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Camille Lemont <br>
-            Nombre maximum de participants: <?= $_SESSION['max_member_musculation']?> <br>
+            Nombre de participants: 5 <br>
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
@@ -117,16 +104,13 @@
       <!-- ... Cycling -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-          <img src="../img/cycling1.jpg" alt="...">
-          </div>
           <div class="card-body">
           <h3 class="card-title">Cycling</h3>
           <p class="card-text">
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Amy Taylor <br>
-            Nombre maximum de participants: <?= $_SESSION['max_member_cycling']?> <br>
+            Nombre de participants: 3 <br>
             Places restantes: <span>3</span> <br>
             Exigences: vélo d'appartement<br>
             Côut de la scéance: <br>
@@ -139,16 +123,13 @@
       <!-- ... Fitness -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-          <img src="../img/fitness.jpg" alt="...">
-          </div>
           <div class="card-body">
           <h3 class="card-title">Fitness</h3>
           <p class="card-text">
             Type cours: collectif <br>
             Durée: 1h <br>
             Encadré par: Laura Jones <br>
-            Nombre maximum de participants: <?= $_SESSION['max_member_fitness']?> <br>
+            Nombre de participants: 5 <br>
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
@@ -160,9 +141,6 @@
       <!-- ... Cours personnalisés -->
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
-          <div class="img-wrapper">
-          <img src="../img/programme-personel.jpg" alt="...">
-          </div>
           <div class="card-body">
           <h3 class="card-title">Cours personnalisés</h3>
           <p class="card-text">
@@ -189,6 +167,7 @@
 
         
   <?php require("../HF/footer.php") ?>
+  <?php require("./data.php") ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
  <!--<script src="./activities.js"></script>---> 
 </body>
