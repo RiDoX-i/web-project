@@ -13,6 +13,7 @@
         require("../HF/header.php") ;
         require("./data.php"); 
         require("set max memebers.php"); 
+        require("remaining places.php");
   ?>
   <main>
   <!-- Hero Section -->
@@ -27,7 +28,7 @@
     </div>
   </div>
 
-  <!-- Activities Section -->
+  <!-- Activities Section $_SESSION['remaining_places_yoga']-->
   <div class="container py-5" id="activities">
     <div class="row g-4">
       
@@ -40,8 +41,8 @@
               Durée: 1h <br>
               Niveau: débutant, intermédiaire, avancé <br>
               Encadré par: Michelle Legrand <br>
-              Nombre de participants: 5 <br>
-              Places restantes: <span>5</span> <br>
+              Nombre de participants: <?= $_SESSION['max_member_yoga'] ?><br>
+              Places restantes: <?= $_SESSION['remaining_places_yoga']?><br>
               Côut de la scéance:
             </p>
             <form action="appends/append yoga.php" method="POST">
@@ -71,8 +72,8 @@
             Durée: 1h <br>
             Niveau: débutant, intermédiaire, avancé <br>
             Encadré par: Marion May <br>
-            Nombre de participants: 3 <br>
-            Places restantes: <span>3</span> <br>
+            Nombre de participants: <?= $_SESSION['max_member_pilates'] ?><br>
+            Places restantes: <?= $_SESSION['remaining_places_pilates']?><br>
             Côut de la scéance: <br>
             </p>
             <form action="appends/append yoga.php" method="POST">
@@ -98,8 +99,8 @@
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Camille Lemont <br>
-            Nombre de participants: 5 <br>
-            Places restantes: <span>5</span> <br>
+            Nombre de participants:<?= $_SESSION['max_member_musculation'] ?><br>
+            Places restantes: <?= $_SESSION['remaining_places_musculation']?><br>
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
@@ -116,8 +117,8 @@
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Amy Taylor <br>
-            Nombre de participants: 3 <br>
-            Places restantes: <span>3</span> <br>
+            Nombre de participants: <?= $_SESSION['max_member_cycling'] ?><br>
+            Places restantes: <?= $_SESSION['remaining_places_cycling']?><br>
             Exigences: vélo d'appartement<br>
             Côut de la scéance: <br>
           </p>
@@ -135,8 +136,8 @@
             Type cours: collectif <br>
             Durée: 1h <br>
             Encadré par: Laura Jones <br>
-            Nombre de participants: 5 <br>
-            Places restantes: <span>5</span> <br>
+            Nombre de participants: <?= $_SESSION['max_member_fitness'] ?><br>
+            Places restantes: <?= $_SESSION['remaining_places_fitness']?><br>
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
