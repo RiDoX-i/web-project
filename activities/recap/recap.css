@@ -1,4 +1,8 @@
 main{
+    background-image:url("../../img/bg-recap.jpg");
+    background-repeat: no-repeat;;
+    background-size: cover;
+    background-position: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +12,12 @@ main{
 }
 
 #courses-report-container{
+    color: rgb(255, 255, 255);
+    border: none;
     align-items: center;
+    background-color: rgba(34, 34, 34, 0.9);
     justify-content: center;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
 #courses-report-container h2{
@@ -18,7 +25,6 @@ main{
     text-align: center; 
     font-weight: bold;
     font-style: italic;
-    color: rgb(0, 0, 0);
 }
 #courses-report-container p{
     font-size: 1rem;
