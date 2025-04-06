@@ -170,9 +170,12 @@
     </div>
   </div>
           <!--crer un compte avant inscrption cours--->
+          <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
+
   <div class="d-flex justify-content-center align-items-center ">
-    <button class="btn btn-light btn-lg">Créer un compte avant de s'incrire </button>
+    <button class="btn btn-light btn-lg">Créer ou connecter a votre compte pour s'incrire aux cours</button>
   </div>
+  <?php endif; ?>
           
   <!-- Promo Section -->
   <div class="container-fluid bg-light text-center py-4" id="promo">
