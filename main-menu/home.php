@@ -122,7 +122,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony4.jpg" class="img-fluid" alt="">
                 <h3>Sara Connors</h3>
-                <p>"Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !"</p>
+                <p>Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !</p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony3.jpg" class="img-fluid" alt="" >
                 <h3>Zack Martins</h3>
-                <p>"Je n’aurais jamais cru aimer autant le sport, ici tout est motivant et personnalisé."</p>
+                <p>Je n’aurais jamais cru aimer autant le sport, ici tout est motivant et personnalisé.</p>
             </div>
           </div>
 
@@ -138,7 +138,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony2.jpg" class="img-fluid" alt="">
                 <h3>Jane Hans</h3>
-                <p>"Des résultats visibles en quelques semaines, et une équipe toujours à l’écoute !"</p>
+                <p>Des résultats visibles en quelques semaines, et une équipe toujours à l’écoute !</p>
             </div>
           </div>
 
@@ -146,7 +146,7 @@
             <div class="model-testimonies text-center">
               <img src="../img/testimony1.jpg" alt="">
               <h3>Frank Mathieu</h3>
-              <p>"J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant."</p>
+              <p>J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant.</p>
             </div>
           </div>
           
