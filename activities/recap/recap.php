@@ -34,6 +34,7 @@
     <?php 
         require("../../HF/footer.php"); 
         unset($_SESSION['lvl']); // lvl must be unset after each recap else the user will keep seeing it each time he reserves a season
+        var_dump($_SESSION);
     ?>
 </body>
 </html>

@@ -26,11 +26,16 @@
       </div>
     </div>
   </div>
-
-  <?php if (isset($_SESSION['registration_success']) && !$_SESSION['registration_success']): ?>
-    <h3 id="error_message_reservation">Il n'y a plus de place disponible pour ce cours</h3>
+<!-- max memebers is reached-->
+  <?php if (isset($_SESSION['registration_success_max_memeber']) && !$_SESSION['registration_success_max_memeber']): ?>
+    <h3 class="error_message_reservation">Il n'y a plus de place disponible pour ce cours</h3>
     <?php endif; 
-    $_SESSION['registration_success']=true; // reset?>
+    $_SESSION['registration_success_max_memeber']=true; // reset?>
+
+<!-- already subsribed to this course-->
+    <?php if (isset($_SESSION['is_subscribed']) && $_SESSION['is_subscribed']): ?>
+    <h3 class="error_message_reservation">Vous êtes déjà inscrit à ce cours</h3>
+    <?php endif; ?>
 
   <!-- Activities Section $_SESSION['remaining_places_yoga']-->
   <div class="container py-5" id="activities">
@@ -184,8 +189,9 @@
 </main>
 
         
-  <?php require("../HF/footer.php") ?>
-  <?php require("./data.php") ?>
+  <?php require("../HF/footer.php");
+        require("./data.php"); 
+        ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -2,8 +2,7 @@
 
 session_start();
 
-
-/* we  should not have acces to this file only if the user has already logged in */
+/* We should not have access to this file unless the user has already logged in */
 
 $serveur = 'localhost';
 $login = 'root';
@@ -14,29 +13,36 @@ try {
     // Connect to the database
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    if ($_SESSION['remaining_places_fitness'] != 0){
-    $_SESSION["registration_success"] = true;
-    $currentDate = date('Y-m-d');
-    echo "".$_SESSION['id_user'];
-    $sql = "INSERT INTO fitness_res (id_user, date_reservation) VALUES ('$_SESSION[id_user]', '$currentDate')";
-    $connexion->exec($sql);
-
-    // these will be used in the recap page 
-    $_SESSION["cour_reservé"] = "Fitness"; 
-    $_SESSION['date_res'] = $currentDate;
     
-    header("Location: http://localhost/web-project/activities/recap/recap.php");
-    }else{ // max participents has been reached
-        $_SESSION["registration_success"] = false;
+    $_SESSION["cour_reservé"] = "Fitness"; 
+    require("../already subscribed.php"); // Check if user is already subscribed to the course
+
+    if ($_SESSION['remaining_places_fitness'] != 0) {
+        if (!$_SESSION['is_subscribed']) { // User not already subscribed
+
+            $currentDate = date('Y-m-d');
+            
+            // Using real_escape_string to prevent SQL injection
+            $id_user = $_SESSION['id_user'];
+            $currentDate = $connexion->quote($currentDate);  // Escape the date
+
+            $sql = "INSERT INTO fitness_res (id_user, date_reservation) VALUES ('$id_user', $currentDate)";
+            $connexion->exec($sql);
+
+            // Set session variables for the recap page
+            $_SESSION['date_res'] = $currentDate;
+
+            $_SESSION["registration_success_max_member"] = true;
+            header("Location: http://localhost/web-project/activities/recap/recap.php");
+        } else { // User already registered to the course
+            header("Location: http://localhost/web-project/activities/activities.php");
+        }
+    } else { // Max participants reached
+        $_SESSION["registration_success_max_member"] = false;
         header("Location: http://localhost/web-project/activities/activities.php");
     }
 
 } catch(PDOException $e) {
-    echo "Erreur : " . $e->getMessage();
+    echo "Error: " . $e->getMessage();
 }
-
-
-
-
 ?>
