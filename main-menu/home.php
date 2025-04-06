@@ -40,11 +40,11 @@
     </section>
 
     <!-- section nos services--->
-    <section id="services-container">
+    <section id="services">
       <div class="container">
         <h2 class="text-center mb-5">Découvrez nos services</h2>
         <div class="row g-4">
-          <!-- Repeat this block for each service -->
+          
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
               <img src="../img/corps-esprit.jpg" alt="">
@@ -52,7 +52,7 @@
               <p>Libérez votre énergie...</p>
             </div>
           </div>
-          <!-- Add the other 3 services in the same structure -->
+          
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
                 <img src="../img/programme.jpg" class="img-fluid" alt="">
@@ -80,11 +80,11 @@
       </div>
     </section>
 
-    <section class="coachs">
+    <section id="coachs">
       <div class="container">
         <h1 class="text-center mb-5">Un mot de nos coachs</h1>
         <div class="row g-4">
-          <!-- Repeat for each coach -->
+          
           <div class="col-md-6 col-lg-4">
             <div class="model-coachs text-center">
             <img src="../img/coach1.jpg" alt="">
@@ -92,7 +92,7 @@
             <p>"Passionné(e) par le sport et le bien-être, je vous accompagne dans votre transformation physique avec des séances adaptées à votre niveau et vos objectifs. Que vous souhaitiez perdre du poids, gagner en muscle ou améliorer votre endurance, je suis là pour vous guider et vous motiver à chaque étape ! 💪🔥 Réservez votre séance dès maintenant !"</p>
             </div>
           </div>
-          <!-- Add 2 more coachs here -->
+          
           <div class="col-md-6 col-lg-4">
             <div class="model-coachs text-center">
               <img src="../img/coach2.jpg" class="img-fluid" alt="">
@@ -113,11 +113,11 @@
       </div>
     </section>
 
-    <section class="testimonies">
+    <section id="testimonies">
       <div class="container">
         <h1 class="text-center mb-5">Témoignages de nos clients</h1>
         <div class="row g-4">
-          <!-- Repeat for each testimonial -->
+      
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
                 <img src="../img/testimony4.jpg" class="img-fluid" alt="">
@@ -149,7 +149,7 @@
               <p>"J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant."</p>
             </div>
           </div>
-          <!-- Add more testimonies here -->
+          
         </div>
       </div>
     </section>
