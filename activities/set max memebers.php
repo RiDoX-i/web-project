@@ -6,10 +6,10 @@
     // this file sets the $_SESSION values to the max number of members per type of sport
 
     try {
+        
         // Connect to the database
         $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 
         // Retrieve max members for each sport and set session values
         // Yoga

@@ -1,4 +1,4 @@
-<?php require("./data.php") ?>
+
 
 
 <!DOCTYPE html>
@@ -12,7 +12,11 @@
     <title>Activities page</title>
 </head>
 <body>
-  <?php require("../HF/header.php") ?>
+  <?php 
+        require("../HF/header.php") ;
+        require("./data.php"); 
+        require("set max memebers.php"); 
+  ?>
   <main>
   <!-- Hero Section -->
   <div class="container-fluid py-5 text-white text-center" id="hero-activities">

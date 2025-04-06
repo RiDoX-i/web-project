@@ -75,8 +75,7 @@ try {
             (5, 'Fitness', 5)";
         $connexion->exec($sql_insert);
     }
-
-    require("set max memebers.php");
+    
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
 }
