@@ -89,7 +89,7 @@
             <div class="model-coachs text-center">
             <img src="../img/coach1.jpg" alt="">
             <h3>Camille Lemont</h3>
-            <p>"Passionné(e) par le sport et le bien-être, je vous accompagne dans votre transformation physique avec des séances adaptées à votre niveau et vos objectifs. Que vous souhaitiez perdre du poids, gagner en muscle ou améliorer votre endurance, je suis là pour vous guider et vous motiver à chaque étape ! 💪🔥 Réservez votre séance dès maintenant !"</p>
+            <p>Passionné(e) par le sport et le bien-être, je vous accompagne dans votre transformation physique avec des séances adaptées à votre niveau et vos objectifs. Que vous souhaitiez perdre du poids, gagner en muscle ou améliorer votre endurance, je suis là pour vous guider et vous motiver à chaque étape ! 💪🔥 Réservez votre séance dès maintenant !</p>
             </div>
           </div>
           
@@ -97,7 +97,7 @@
             <div class="model-coachs text-center">
               <img src="../img/coach2.jpg" class="img-fluid" alt="">
               <h3>Amy Taylor</h3>
-              <p>"Avec plusieurs années d’expérience en coaching sportif, j’aide mes clients à dépasser leurs limites et à atteindre leurs objectifs grâce à des entraînements personnalisés et une approche motivante. Vous voulez progresser, gagner en force et en énergie ? N’attendez plus, réservez votre séance et ensemble, atteignons vos sommets ! 🚀💥"</p>
+              <p>Avec plusieurs années d’expérience en coaching sportif, j’aide mes clients à dépasser leurs limites et à atteindre leurs objectifs grâce à des entraînements personnalisés et une approche motivante. Vous voulez progresser, gagner en force et en énergie ? N’attendez plus, réservez votre séance et ensemble, atteignons vos sommets ! 🚀💥</p>
             </div>
           </div>
 
@@ -105,7 +105,7 @@
             <div class="model-coachs text-center">
                 <img src="../img/coach3.jpg" class="img-fluid" alt="">
                 <h3>Laura Jones</h3>
-                <p>"Respirez, étirez, retrouvez votre équilibre… 🧘‍♀️ Avec mes séances de yoga adaptées à tous les niveaux, je vous aide à reconnecter votre corps et votre esprit. Que vous souhaitiez vous détendre, améliorer votre souplesse ou renforcer votre posture, je vous accompagne avec bienveillance. Réservez votre séance et offrez-vous un moment pour vous !"</p>
+                <p>Respirez, étirez, retrouvez votre équilibre… 🧘‍♀️ Avec mes séances de yoga adaptées à tous les niveaux, je vous aide à reconnecter votre corps et votre esprit. Que vous souhaitiez vous détendre, améliorer votre souplesse ou renforcer votre posture, je vous accompagne avec bienveillance. Réservez votre séance et offrez-vous un moment pour vous !</p>
             </div>
           </div>
            
@@ -122,7 +122,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony4.jpg" class="img-fluid" alt="">
                 <h3>Sara Connors</h3>
-                <p>"Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !"</p>
+                <p>Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !</p>
             </div>
           </div>
 
@@ -130,7 +130,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony3.jpg" class="img-fluid" alt="" >
                 <h3>Zack Martins</h3>
-                <p>"Je n’aurais jamais cru aimer autant le sport, ici tout est motivant et personnalisé."</p>
+                <p>Je n’aurais jamais cru aimer autant le sport, ici tout est motivant et personnalisé.</p>
             </div>
           </div>
 
@@ -138,7 +138,7 @@
             <div class="model-testimonies text-center">
                 <img src="../img/testimony2.jpg" class="img-fluid" alt="">
                 <h3>Jane Hans</h3>
-                <p>"Des résultats visibles en quelques semaines, et une équipe toujours à l’écoute !"</p>
+                <p>Des résultats visibles en quelques semaines, et une équipe toujours à l’écoute !</p>
             </div>
           </div>
 
@@ -146,7 +146,7 @@
             <div class="model-testimonies text-center">
               <img src="../img/testimony1.jpg" alt="">
               <h3>Frank Mathieu</h3>
-              <p>"J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant."</p>
+              <p>J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant.</p>
             </div>
           </div>
           
