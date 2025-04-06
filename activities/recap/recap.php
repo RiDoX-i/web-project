@@ -19,14 +19,21 @@
             <div class="p-4 " id="courses-report-container">
                     <h2>Récapitulatif de votre inscription</h2>
                     <p> Votre inscription est confirmée !</p>
-                    <p>  Nom : </p>
-                    <p> Prénom :  </p>
-                    <p>Cours réservé :  </p>
-                    <p>Date de réservation : </p>
+                    <p>  Nom : <?= $_SESSION['Fname']?> </p>
+                    <p> Prénom :  <?= $_SESSION['username']?></p>
+                    <p>Cours réservé :  <?=$_SESSION['cour_reservé']?></p>
+
+                    <?php if (isset($_SESSION['lvl'])): ?>
+                     <p>Niveau :  <?=$_SESSION['lvl']?></p>
+                    <?php endif; ?>
+                    <p>Date de réservation : <?= $_SESSION['date_res']?></p>
             </div>
         </div>
     </main>
 
-    <?php require("../../HF/footer.php") ?>
+    <?php 
+        require("../../HF/footer.php"); 
+        unset($_SESSION['lvl']); // lvl must be unset after each recap else the user will keep seeing it each time he reserves a season
+    ?>
 </body>
 </html>

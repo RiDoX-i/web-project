@@ -52,9 +52,9 @@
             <form action="appends/append yoga.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
               <select id="niveau-yoga" class="form-select mb-3" name="lvl">
-                <option value="debutant">Débutant</option>
-                <option value="intermediaire">Intermédiaire</option>
-                <option value="avance">Avancé</option>
+                <option value="Débutant">Débutant</option>
+                <option value="Intermédiaire">Intermédiaire</option>
+                <option value="Avancé">Avancé</option>
               </select>
               <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <button type="submit" class="btn btn-primary w-100">S'inscrire</button>

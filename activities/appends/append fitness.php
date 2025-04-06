@@ -22,7 +22,11 @@ try {
     $sql = "INSERT INTO fitness_res (id_user, date_reservation) VALUES ('$_SESSION[id_user]', '$currentDate')";
     $connexion->exec($sql);
 
-    header("Location: http://localhost/web-project/activities/activities.php");
+    // these will be used in the recap page 
+    $_SESSION["cour_reservé"] = "Fitness"; 
+    $_SESSION['date_res'] = $currentDate;
+    
+    header("Location: http://localhost/web-project/activities/recap/recap.php");
     }else{ // max participents has been reached
         $_SESSION["registration_success"] = false;
         header("Location: http://localhost/web-project/activities/activities.php");

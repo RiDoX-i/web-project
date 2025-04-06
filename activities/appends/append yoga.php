@@ -20,8 +20,10 @@ try {
     $currentDate = date('Y-m-d');
     $sql = "INSERT INTO yoga_res (id_user,lvl, date_reservation) VALUES ('$_SESSION[id_user]', '$_POST[lvl]','$currentDate')";
     $connexion->exec($sql);
-
-    header("Location: http://localhost/web-project/activities/activities.php");
+    $_SESSION["cour_reservé"] = "Yoga"; // used in the recap page to inform witch sport is takken
+    $_SESSION['date_res'] = $currentDate;
+    $_SESSION['lvl']=$_POST['lvl'];
+    header("Location: http://localhost/web-project/activities/recap/recap.php");
 }else{ // max participents has been reached
         $_SESSION["registration_success"] = false;
         header("Location: http://localhost/web-project/activities/activities.php");
