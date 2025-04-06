@@ -1,73 +1,50 @@
 <?php
-// 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données du formulaire
-    $name = htmlspecialchars($_POST['name']); // Nom
-    $fname = htmlspecialchars($_POST['fname']); // Prénom
-    $email = htmlspecialchars($_POST['email']); // Email
-    $phone = htmlspecialchars($_POST['phone']); // Téléphone
-    $service = htmlspecialchars($_POST['service']); // Service demandé
-    $handicap = htmlspecialchars($_POST['handicap']); // Handicap
-    $programmeType = isset($_POST['programme-type']) ? htmlspecialchars($_POST['programme-type']) : "Non précisé"; // Type de programme
-    $courseType = htmlspecialchars($_POST['course-type']); // Type de cours
-    $sessionCount = (int)$_POST['session-count']; // Nombre de sessions
-    $price = (int)$_POST['price']; // Estimation du prix (calculée par JavaScript et envoyée par le formulaire)
+    $name = htmlspecialchars($_POST['name']);
+    $fname = htmlspecialchars($_POST['fname']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $service = htmlspecialchars($_POST['service']);
+    $handicap = htmlspecialchars($_POST['handicap']);
+    $programmeType = isset($_POST['programme-type']) ? htmlspecialchars($_POST['programme-type']) : "Non précisé";
+    $courseType = htmlspecialchars($_POST['course-type']);
+    $sessionCount = (int)$_POST['session-count'];
+    $price = (int)$_POST['price'];
 
-    // Corps de l'email pour l'utilisateur
-    $to = $email; // L'email de l'utilisateur
+    $to = $email;
     $subject = "Votre demande de devis - Sportify";
-    $body = "
-    Bonjour $fname $name,
 
-    Nous avons bien reçu votre demande de devis. Voici un résumé :
+    $userBody = "
+Bonjour $fname $name,
 
-    Type de service demandé : $service
-    Type de programme personnalisé : $programmeType
-    Type de cours : $courseType
-    Nombre de sessions : $sessionCount
-    Êtes-vous handicapé : $handicap
+Nous avons bien reçu votre demande de devis. Voici un résumé :
 
-    Estimation du prix : $price €
+Type de service : $service
+Type de programme : $programmeType
+Type de cours : $courseType
+Nombre de sessions : $sessionCount
+Handicap : $handicap
 
-    Merci de nous avoir contacté, nous reviendrons vers vous sous peu.
+Estimation du prix : $price €
 
-    Cordialement,
-    L'équipe Sportify
-    ";
+Merci de nous avoir contacté. L'équipe Sportify.
+";
 
-    // Entêtes de l'email
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8" . "\r\n";
-    $headers .= "From: contact@sportify.com" . "\r\n";
+    $headers = "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    $headers .= "From: contact@sportify.com\r\n";
 
-    // Envoi de l'email à l'utilisateur
-    if (mail($to, $subject, $body, $headers)) {
-        // Si l'email a été envoyé avec succès, envoyer un email à l'administrateur aussi
-        $adminEmail = "admin@sportify.com"; // Remplacer par l'email de l'administrateur
+    if (mail($to, $subject, $userBody, $headers)) {
+        $adminEmail = "thiernooury433@gmail.com";
         $adminSubject = "Nouvelle demande de devis - Sportify";
-        $adminBody = "
-        Nouveau devis reçu :
+        $adminMessage = "Le client $fname $name a fait une demande de devis le " . date('d/m/Y à H:i') . ".";
 
-        Nom : $fname $name
-        Email : $email
-        Téléphone : $phone
-        Service demandé : $service
-        Type de programme personnalisé : $programmeType
-        Type de cours : $courseType
-        Nombre de sessions : $sessionCount
-        Handicap : $handicap
-
-        Estimation du prix : $price €
-        ";
-
-        // Envoi de l'email à l'administrateur
-        mail($adminEmail, $adminSubject, $adminBody, $headers);
-
-        // Rediriger l'utilisateur vers la page de confirmation
-        header("Location: confirmation.php"); // Vous pouvez créer une page "confirmation.php" pour afficher un message de succès
+        mail($adminEmail, $adminSubject, $adminMessage, $headers);
+        header("Location: devis.php?success=true");
         exit();
     } else {
-        echo "Une erreur est survenue, veuillez réessayer.";
+        header("Location: devis.php?error=true");
+        exit();
     }
 }
 ?>
