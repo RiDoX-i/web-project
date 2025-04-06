@@ -28,6 +28,11 @@
     </div>
   </div>
 
+  <?php if (isset($_SESSION['registration_success']) && !$_SESSION['registration_success']): ?>
+    <h3 id="error_message_reservation">Il n'y a plus de place disponible pour ce cours</h3>
+    <?php endif; 
+    $_SESSION['registration_success']=true; // reset?>
+
   <!-- Activities Section $_SESSION['remaining_places_yoga']-->
   <div class="container py-5" id="activities">
     <div class="row g-4">
