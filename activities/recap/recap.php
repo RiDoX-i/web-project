@@ -6,25 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="recap.css">
+    <link rel="stylesheet" href="../../HF/index.css">
 
     <title>courses-report</title>
 </head>
 </p>
 <body>
-       <main>
-            <div class="d-flex justify-content-center align-items-center vh-100">
-                <div class="p-4 bg-light border rounded" id="courses-report-container">
+    <?php require("../../HF/header.php") ;?>
+
+    <main>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="p-4 " id="courses-report-container">
                     <h2>Récapitulatif de votre inscription</h2>
-                    <p>
-                        Nom :<br>
-                        Prénom : <br>
-                        Cours réservé: <br>
-                        Durée du cours : <br>
-                        Encadreur: <br>
-                        Date du cours : <br>
-                    </p>
-                </div>
+                    <p> Votre inscription est confirmée !</p>
+                    <p>  Nom : </p>
+                    <p> Prénom :  </p>
+                    <p>Cours réservé :  </p>
+                    <p>Date de réservation : </p>
             </div>
-       </main>
+        </div>
+    </main>
+
+    <?php require("../../HF/footer.php") ?>
 </body>
 </html>
