@@ -74,32 +74,19 @@
             Nombre de participants: 3 <br>
             Places restantes: <span>3</span> <br>
             Côut de la scéance: <br>
-<<<<<<< HEAD
-            <form>
-              <label for="niveau-pilate" class="form-label">Sélectionnez votre niveau</label>
-              <select id="niveau-pilate" class="form-select mb-3">
-=======
             </p>
             <form action="appends/append yoga.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
               <select id="niveau-yoga" class="form-select mb-3" name="lvl">
->>>>>>> 9c4f93583e8b5ce6c1723e392ada19dced21be8f
                 <option value="debutant">Débutant</option>
                 <option value="intermediaire">Intermédiaire</option>
                 <option value="avance">Avancé</option>
               </select>
-<<<<<<< HEAD
-            </form>
-            <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <href="appends/append pilates.php" class="btn btn-primary w-100">S'inscrire</a>
-            <?php endif; ?>          </div>
-=======
               <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
               <?php endif; ?>
             </form>    
              </div>
->>>>>>> 9c4f93583e8b5ce6c1723e392ada19dced21be8f
         </div>
       </div>
      
