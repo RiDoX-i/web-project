@@ -35,5 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Alerte en cas d’erreur
         echo "<script>alert('Erreur lors de l\'envoi. Veuillez réessayer.'); window.history.back();</script>";
     }
+    header("Location: http://localhost/web-project/main-menu/home.php");
 }
 ?>
