@@ -22,7 +22,6 @@
       <div class="col-md-8">
         <h1 class="display-4 fw-bold">Découvrez nos cours</h1>
         <div class="mt-4">
-          <a href="#" class="btn btn-light btn-lg">Rejoignez-nous</a>
         </div>
       </div>
     </div>
@@ -170,7 +169,11 @@
       
     </div>
   </div>
-
+          <!--crer un compte avant inscrption cours--->
+  <div class="d-flex justify-content-center align-items-center ">
+    <button class="btn btn-light btn-lg">Créer un compte avant de s'incrire </button>
+  </div>
+          
   <!-- Promo Section -->
   <div class="container-fluid bg-light text-center py-4" id="promo">
     <p class="lead m-0">Jusqu'à 15% de réduction lors de votre première réservation !</p>
