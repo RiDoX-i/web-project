@@ -2,16 +2,26 @@ main{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Open Sans", Tahoma, Geneva, Verdana, "sans-serif", system-ui, -apple-system, 'Bebas Neue', sans-serif;
     align-items: center;
     justify-content: center; 
 }
 
-couses-report-container{
-    border: black 1px solid;
+#courses-report-container{
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    border-radius: 2px;
-    color: red;
+    border-radius: 5px;
+}
+#courses-report-container h2{
+    font-size: 2rem;
+    text-align: center; 
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+#courses-report-container p{
+    font-size: 1rem;
+    margin: 20px;
+    text-align: justify; 
 }
