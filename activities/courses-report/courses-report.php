@@ -11,20 +11,26 @@
 </head>
 </p>
 <body>
-       <main>
-            <div class="d-flex justify-content-center align-items-center vh-100">
-                <div class="p-4 " id="courses-report-container">
-                    <h2>Récapitulatif de votre inscription</h2>
-                    <p>
-                        Nom :<br>
-                        Prénom : <br>
-                        Cours réservé: <br>
-                        Durée du cours : <br>
-                        Encadreur: <br>
-                        Date du cours : <br>
-                    </p>
-                </div>
+    <!--HEADER-->
+    <?php require("../HF/header.php") ;?>
+    <!--/HEADER-->
+    <main>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="p-4 " id="courses-report-container">
+                <h2>Récapitulatif de votre inscription</h2>
+                <p>
+                    Nom :<br>
+                    Prénom : <br>
+                    Cours réservé: <br>
+                    Durée du cours : <br>
+                    Encadreur: <br>
+                    Date du cours : <br>
+                </p>
             </div>
-       </main>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <?php require("../HF/footer.php") ?>
+    <!--/FOOTER-->
 </body>
 </html>
