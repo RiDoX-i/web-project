@@ -22,6 +22,7 @@ try {
     while ($donnees = $reponse->fetch()) {
         if ($donnees["email"] == $login_email && $donnees["mot_de_passe"] == $login_password) {
             $_SESSION['login_success'] = true;
+            $_SESSION['id_user'] = $donnees['id'];
             $_SESSION['username'] = $donnees["prenom"];
             break;
         }

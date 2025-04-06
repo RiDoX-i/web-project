@@ -52,7 +52,7 @@
               </select>
             </form>
             <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="appends/append yoga.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>
 
           </div>
@@ -86,7 +86,7 @@
               </select>
             </form>
             <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="appends/append pilates.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="appends/append musculation.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="appends/append cycling.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>
@@ -150,7 +150,7 @@
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="appends/append fitness.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>
@@ -170,7 +170,7 @@
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+              <a href="../devis/devis.php" class="btn btn-primary w-100">S'inscrire</a>
             <?php endif; ?>          </div>
         </div>
       </div>

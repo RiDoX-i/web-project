@@ -17,41 +17,40 @@ try {
     // Create the table if it doesn't exist
     $sql = "CREATE TABLE IF NOT EXISTS yoga_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user VARCHAR(40),
+        id_user INT,
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
     );
     
     CREATE TABLE IF NOT EXISTS pilates_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user VARCHAR(40),
+        id_user INT,
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
     );
     
     CREATE TABLE IF NOT EXISTS musculation_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user VARCHAR(40),
+        id_user INT,
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
     );
     
     CREATE TABLE IF NOT EXISTS cycling_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user VARCHAR(40),
+        id_user INT,
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
     );
     
     CREATE TABLE IF NOT EXISTS fitness_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user VARCHAR(40),
+        id_user INT,
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
     );";
     
     $connexion->exec($sql);
-    //echo "Table has been created.";
     
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
