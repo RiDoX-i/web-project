@@ -15,7 +15,7 @@ try {
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     $_SESSION["cour_reservé"] = "Cycling"; 
-    require("../already_subscribed.php");
+    require("../already subscribed.php");
 
     if ($_SESSION['remaining_places_cycling'] != 0) { // Check if places are available
         if (!$_SESSION['is_subscribed']) { // User not already subscribed
