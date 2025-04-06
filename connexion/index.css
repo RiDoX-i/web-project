@@ -1,4 +1,4 @@
-body, html {
+body {
   background-image: url("bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,11 +7,6 @@ body, html {
   color: white;
 }
 
-form label {
-  display: block;
-  font-weight: bold;
-  font-size: 1rem;
-}
 
 input, textarea, select {
   background-color: #333;
@@ -21,13 +16,17 @@ input, textarea, select {
   padding: 8px;
   width: 100%;
   box-sizing: border-box;
+  margin-bottom: 15px; 
 }
 
-input[type="submit"], .buttons {
+
+
+.buttons {
   background-color: #333;
   color: #fff;
   border: none;
   padding: 12px 25px;
+  margin-top: 10px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
@@ -36,30 +35,10 @@ input[type="submit"], .buttons {
   box-sizing: border-box;
 }
 
-input[type="submit"]:hover, .buttons:hover {
+.buttons:hover {
   background-color: #ff9800;
 }
 
-.nav-link, .login a {
-  font-weight: 200;
-  font-size: 1.2rem;
-  color: white !important;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover, .login a:hover {
-  color: #f0a500 !important;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  box-sizing: border-box;
-}
 
 #block1, #block2 {
   max-width: 600px;
@@ -69,54 +48,14 @@ main {
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
   width: 100%;
-  box-sizing: border-box;
 }
 
 h3, h6 {
   text-align: center;
-  color: #fff;
 }
 
-#block2 h6 {
+h6 {
   color: #bbb;
 }
 
-.buttons-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
 
-form input, form textarea {
-  margin-bottom: 15px; /* Space between inputs and buttons */
-}
-
-.buttons-container button {
-  margin-top: 15px; /* Space between the buttons and inputs */
-}
-
-@media (max-width: 768px) {
-  #block1, #block2 {
-      max-width: 100%;
-      padding: 15px;
-  }
-
-  .buttons-container {
-      flex-direction: column;
-      gap: 15px;
-  }
-
-  input[type="submit"] {
-      width: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  #block1, #block2 {
-      padding: 10px;
-  }
-
-  h3 {
-      font-size: 1.5rem;
-  }
-}
