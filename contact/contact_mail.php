@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Email de destination (celui de l'administrateur)
-    $to = "admin@sportify.com"; // ← change ça par ton adresse email
+    $to = "thiernooury433@gmail.com"; // ← change ça par ton adresse email
 
     $subject = "Nouveau message de contact - Sportify";
 
