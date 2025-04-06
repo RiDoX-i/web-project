@@ -5,7 +5,14 @@
   align-items: center;
   justify-content: center;
 }
-
+#error_message_reservation{
+  text-align: center;
+  color : rgb(0, 0, 0);
+  font-family: "Open Sans";
+  padding : 5px;
+  font-size: 25px;
+  background-color: #ff4b04;
+}
 .img-wrapper img {
   object-fit: cover;
   height: 200px;
@@ -30,3 +37,5 @@
   background-color: #ff8e04;
   color: rgb(0, 0, 0);
 }
+
+
