@@ -144,7 +144,7 @@
 
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
-              <img src="../img/testimony1 .jpg" alt="">
+              <img src="../img/testimony1.jpg" alt="">
               <h3>Frank Mathieu</h3>
               <p>"J’ai retrouvé confiance en moi grâce à leur programme adapté et leur suivi bienveillant."</p>
             </div>
