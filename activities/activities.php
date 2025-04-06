@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 9c4f93583e8b5ce6c1723e392ada19dced21be8f
 <!DOCTYPE html>
 <html lang="en">
 <head>
