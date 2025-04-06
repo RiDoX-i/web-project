@@ -76,7 +76,7 @@
             Places restantes: <?= $_SESSION['remaining_places_pilates']?><br>
             Côut de la scéance: <br>
             </p>
-            <form action="appends/append yoga.php" method="POST">
+            <form action="appends/append pilates.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
               <select id="niveau-yoga" class="form-select mb-3" name="lvl">
                 <option value="debutant">Débutant</option>
@@ -99,7 +99,7 @@
             Type cours: collectif <br>
             Durée: 45 min <br>
             Encadré par: Camille Lemont <br>
-            Nombre de participants:<?= $_SESSION['max_member_musculation'] ?><br>
+            Nombre de participants: <?= $_SESSION['max_member_musculation'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_musculation']?><br>
             Côut de la scéance: <br>
           </p>

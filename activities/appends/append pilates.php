@@ -14,21 +14,17 @@ try {
     // Connect to the database
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    var_dump($_SESSION);
-
+    
+    if ($_SESSION['remaining_places_pilates'] != 0){
     $currentDate = date('Y-m-d');
-    echo "".$_SESSION['id_user'];
-    $sql = "INSERT INTO pilates_res (id_user, date_reservation) VALUES ('$_SESSION[id_user]', '$currentDate')";
+    $sql = "INSERT INTO pilates_res (id_user, lvl,date_reservation) VALUES ('$_SESSION[id_user]',  '$_POST[lvl]','$currentDate')";
     $connexion->exec($sql);
 
     echo "added successfully";
-    // at this point i should call the checker memeber max num and take the true or false value
-  /*  if ($_SESSION['login_success']) {
-        header("Location: http://localhost/web-project/main-menu/home.php");
-    } else {
-        header("Location: http://localhost/web-project/connexion/connexion.php");
-    }
-*/
+    }else // max participents has been reached
+    header("Location: http://localhost/web-project/activities/activities.php");
+
+
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
 }
