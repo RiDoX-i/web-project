@@ -51,7 +51,10 @@
                 <option value="avance">Avancé</option>
               </select>
             </form>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>
+
           </div>
         </div>
       </div>
@@ -82,8 +85,9 @@
                 <option value="avance">Avancé</option>
               </select>
             </form>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
-          </div>
+            <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>          </div>
         </div>
       </div>
       <!-- ... Renforcement musculaire -->
@@ -102,8 +106,9 @@
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
-          </div>
+          <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>          </div>
         </div>
       </div>
       <!-- ... Cycling -->
@@ -123,8 +128,9 @@
             Exigences: vélo d'appartement<br>
             Côut de la scéance: <br>
           </p>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
-          </div>
+          <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>          </div>
         </div>
       </div>
       <!-- ... Fitness -->
@@ -143,8 +149,9 @@
             Places restantes: <span>5</span> <br>
             Côut de la scéance: <br>
           </p>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
-          </div>
+          <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>          </div>
         </div>
       </div>
       <!-- ... Cours personnalisés -->
@@ -162,8 +169,9 @@
             Assuré par: Laura Marins <br>
             Côut de la scéance: <br>
           </p>
-            <a href="#" class="btn btn-primary w-100">S'inscrire</a>
-          </div>
+          <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <a href="#" class="btn btn-primary w-100">S'inscrire</a>
+            <?php endif; ?>          </div>
         </div>
       </div>
       

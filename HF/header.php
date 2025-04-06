@@ -36,7 +36,6 @@
 
       </ul>
 
-      <!-- Show Connexion/Inscription if NOT logged in; Se Déconnecter if logged in -->
       <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
         <a href="../connexion/connexion.php" class="nav-link fs-5">Connexion | Inscription</a>
       <?php else: ?>
