@@ -13,7 +13,7 @@
 <body>
        <main>
             <div class="d-flex justify-content-center align-items-center vh-100">
-                <div class="p-4 bg-light border rounded" id="courses-report-container">
+                <div class="p-4 " id="courses-report-container">
                     <h2>Récapitulatif de votre inscription</h2>
                     <p>
                         Nom :<br>
