@@ -26,7 +26,7 @@
   <!-- Activities Section -->
   <div class="container py-5" id="activities">
     <div class="row g-4">
-      <!-- Card 1 -->
+      
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -56,8 +56,7 @@
         </div>
       </div>
 
-      <!-- Répète la même structure pour chaque activité -->
-      <!-- ... Pilates -->
+    
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -83,7 +82,7 @@
             <?php endif; ?>          </div>
         </div>
       </div>
-      <!-- ... Renforcement musculaire -->
+     
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -101,7 +100,7 @@
             <?php endif; ?>          </div>
         </div>
       </div>
-      <!-- ... Cycling -->
+      
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -120,7 +119,7 @@
             <?php endif; ?>          </div>
         </div>
       </div>
-      <!-- ... Fitness -->
+      
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -138,7 +137,7 @@
             <?php endif; ?>          </div>
         </div>
       </div>
-      <!-- ... Cours personnalisés -->
+     
       <div class="col-lg-4 col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
@@ -169,6 +168,6 @@
   <?php require("../HF/footer.php") ?>
   <?php require("./data.php") ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
- <!--<script src="./activities.js"></script>---> 
+
 </body>
 </html>
