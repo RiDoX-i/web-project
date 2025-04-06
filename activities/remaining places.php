@@ -12,26 +12,26 @@ try {
 
     // getting the number of places remaining for all the sports 
     //yoga
-    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_tooken FROM yoga_res");
+    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_taken FROM yoga_res");
     $number_of_res = $sql->fetch();
-    $_SESSION['remaining_places_yoga'] =$_SESSION['max_member_yoga'] - $number_of_res["number_of_places_tooken"];
+    $_SESSION['remaining_places_yoga'] =$_SESSION['max_member_yoga'] - $number_of_res["number_of_places_taken"];
 
     //pilates
-    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_tooken FROM pilates_res");
+    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_taken FROM pilates_res");
     $number_of_res = $sql->fetch();
-    $_SESSION['remaining_places_pilates'] =$_SESSION['max_member_pilates'] - $number_of_res["number_of_places_tooken"];
+    $_SESSION['remaining_places_pilates'] =$_SESSION['max_member_pilates'] - $number_of_res["number_of_places_taken"];
     //musculation
-    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_tooken FROM musculation_res");
+    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_taken FROM musculation_res");
     $number_of_res = $sql->fetch();
-    $_SESSION['remaining_places_musculation'] =$_SESSION['max_member_musculation'] - $number_of_res["number_of_places_tooken"];
+    $_SESSION['remaining_places_musculation'] =$_SESSION['max_member_musculation'] - $number_of_res["number_of_places_taken"];
     // fitness
-    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_tooken FROM fitness_res");
+    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_taken FROM fitness_res");
     $number_of_res = $sql->fetch();
-    $_SESSION['remaining_places_fitness'] =$_SESSION['max_member_fitness'] - $number_of_res["number_of_places_tooken"];
+    $_SESSION['remaining_places_fitness'] =$_SESSION['max_member_fitness'] - $number_of_res["number_of_places_taken"];
     // cycling
-    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_tooken FROM cycling_res");
+    $sql = $connexion->query("SELECT COUNT(*) AS number_of_places_taken FROM cycling_res");
     $number_of_res = $sql->fetch();
-    $_SESSION['remaining_places_cycling'] =$_SESSION['max_member_cycling'] - $number_of_res["number_of_places_tooken"];
+    $_SESSION['remaining_places_cycling'] =$_SESSION['max_member_cycling'] - $number_of_res["number_of_places_taken"];
 
 } catch(PDOException $e) {
     echo "Erreur : " . $e->getMessage();
