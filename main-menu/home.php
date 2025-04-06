@@ -82,7 +82,7 @@
 
     <section id="coachs">
       <div class="container">
-        <h1 class="text-center mb-5">Un mot de nos coachs</h1>
+        <h2 class="text-center mb-5">Un mot de nos coachs</h2>
         <div class="row g-4">
           
           <div class="col-md-6 col-lg-4">
@@ -115,10 +115,10 @@
 
     <section id="testimonies">
       <div class="container">
-        <h1 class="text-center mb-5">Témoignages de nos clients</h1>
+        <h2 class="text-center mb-5">Témoignages de nos clients</h2>
         <div class="row g-4">
       
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-6">
             <div class="model-testimonies text-center">
                 <img src="../img/testimony4.jpg" class="img-fluid" alt="">
                 <h3>Rick Connors</h3>
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-6">
             <div class="model-testimonies text-center">
                 <img src="../img/testimony3.jpg" class="img-fluid" alt="" >
                 <h3>Zack Martins</h3>
@@ -134,7 +134,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-6">
             <div class="model-testimonies text-center">
                 <img src="../img/testimony2.jpg" class="img-fluid" alt="">
                 <h3>Jane Hans</h3>
@@ -142,7 +142,7 @@
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-6">
             <div class="model-testimonies text-center">
               <img src="../img/testimony1.jpg" alt="">
               <h3>Frank Mathieu</h3>

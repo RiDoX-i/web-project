@@ -92,7 +92,7 @@ body {
 
 
 #services, #coachs, #testimonies {
-  border: 3px solid #000000;
+
 align-items: center;
 justify-content: center;
 padding: 10px 5px;
@@ -118,15 +118,20 @@ justify-content: center;
   height: 150px;
   border-radius: 50%;
   margin-bottom: 2px;
+  object-fit: cover;
 }
 
-#coachs .model-coachs {
+ .model-coachs {
   background-color: var(--dark-bg);
   color: var(--text-light);
 }
 
+#testimonies .container{
+  
+  justify-content: center;
+  align-items: center;
+}
 .model-testimonies {
-  background-color:rgb(0,0,0);
   align-items: center;
   justify-content: center;
 }
