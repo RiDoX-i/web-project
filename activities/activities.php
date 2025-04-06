@@ -46,17 +46,18 @@
               Places restantes: 5 <br>
               Côut de la scéance:
             </p>
-            <form>
+            <form action="appends/append yoga.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
-              <select id="niveau-yoga" class="form-select mb-3">
+              <select id="niveau-yoga" class="form-select mb-3" name="lvl">
                 <option value="debutant">Débutant</option>
                 <option value="intermediaire">Intermédiaire</option>
                 <option value="avance">Avancé</option>
               </select>
+              <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+              <?php endif; ?>
             </form>
-            <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="appends/append yoga.php" class="btn btn-primary w-100">S'inscrire</a>
-            <?php endif; ?>
+            
 
           </div>
         </div>
@@ -80,17 +81,18 @@
             Places restantes: <span>3</span> <br>
             Côut de la scéance: <br>
             </p>
-            <form>
-              <label for="niveau-pilate" class="form-label">Sélectionnez votre niveau</label>
-              <select id="niveau-pilate" class="form-select mb-3">
+            <form action="appends/append yoga.php" method="POST">
+              <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
+              <select id="niveau-yoga" class="form-select mb-3" name="lvl">
                 <option value="debutant">Débutant</option>
                 <option value="intermediaire">Intermédiaire</option>
                 <option value="avance">Avancé</option>
               </select>
-            </form>
-            <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
-              <a href="appends/append pilates.php" class="btn btn-primary w-100">S'inscrire</a>
-            <?php endif; ?>          </div>
+              <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
+              <button type="submit" class="btn btn-primary w-100">S'inscrire</button>
+              <?php endif; ?>
+            </form>    
+             </div>
         </div>
       </div>
       <!-- ... Renforcement musculaire -->
