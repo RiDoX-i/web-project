@@ -18,7 +18,7 @@ try {
 
     $currentDate = date('Y-m-d');
 
-    $sql = "INSERT INTO yoga_res (id_user, date_reservation) VALUES ('$_SESSION[id_user]', '$currentDate')";
+    $sql = "INSERT INTO yoga_res (id_user,lvl, date_reservation) VALUES ('$_SESSION[id_user]', '$_POST[lvl]','$currentDate')";
     $connexion->exec($sql);
 
     echo "added successfully";

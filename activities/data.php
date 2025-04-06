@@ -22,7 +22,7 @@ try {
     
     CREATE TABLE IF NOT EXISTS pilates_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
-        id_user INT,
+        id_user INT,        
         lvl VARCHAR(10),
         date_reservation DATE,
         FOREIGN KEY (id_user) REFERENCES Account(id)
