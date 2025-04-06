@@ -92,14 +92,12 @@ body {
 }
 
 
-
-/*service section*/
-
-#services-container, .coachs, .testimonies {
+#services, #coachs, #testimonies {
 align-items: center;
 justify-content: center;
 padding: 3rem 1rem;
 }
+
 .model-service, .model-coachs, .model-testimonies {
 align-items: center;
 justify-content: center;
