@@ -121,7 +121,7 @@
           <div class="col-md-6 col-lg-5">
             <div class="model-testimonies text-center">
                 <img src="../img/testimony4.jpg" class="img-fluid" alt="">
-                <h3>Sara Connors</h3>
+                <h3>Rick Connors</h3>
                 <p>Grâce à leurs conseils nutritionnels, j’ai changé mes habitudes et mon énergie au quotidien a explosé !</p>
             </div>
           </div>
