@@ -38,4 +38,7 @@
   color: rgb(0, 0, 0);
 }
 
-
+#promo p{
+  font-size: 2rem;
+  font-weight: bold;
+}
