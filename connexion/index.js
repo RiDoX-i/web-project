@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
       errorMessage.textContent = "Veuillez remplir tous les champs";
       errorMessage.style.color = 'red';
       errorMessage.className = 'error-message'; 
-      var parent = document.getElementById('block2') || document.body;
+      var parent = document.getElementById('block2') 
       parent.appendChild(errorMessage);
       event.preventDefault();
       return false;
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
       errorMessage.textContent = "Les mots de passe ne correspondent pas";
       errorMessage.style.color = 'red';
       errorMessage.className = 'error-message';
-      var parent = document.getElementById('block2') || document.body;
+      var parent = document.getElementById('block2') 
       parent.appendChild(errorMessage);
       event.preventDefault();
       return false;
