@@ -22,7 +22,7 @@
           <div class="offcanvas-body d-flex flex-column flex-lg-row w-100 justify-content-between align-items-lg-center">  
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 flex-lg-row text-center">
               <li class="nav-item">
-                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="../main-menu/home.php">Accueil</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">Activités sportives</a>
