@@ -37,6 +37,8 @@ try {
                 VALUES ('$name', '$fname', '$gender', '$dataNS', '$cp', '$city', '$adress', '$email', '$password')";
         
         $stmt = $connexion->exec($sql);
+    }else {
+        header("Location: http://localhost/web-project/connexion/connexion.php");
     }
 
 } catch(PDOException $e) {
