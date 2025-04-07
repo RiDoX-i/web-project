@@ -1,25 +1,23 @@
-const input = document.querySelectorAll("input");
-console.log('Elements found:', input);
+document.addEventListener("DOMContentLoaded", function () {
+    const forms = document.querySelectorAll("form");
 
-// Handle form submit
+    forms.forEach(form => {
+        form.addEventListener("submit", function (e) {
+            const requiredFields = form.querySelectorAll("input[required], select[required]");
+            let isValid = true;
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the form from submitting automatically
-    verify();  // Call the verify function
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add("is-invalid");
+                    isValid = false;
+                } else {
+                    field.classList.remove("is-invalid");
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault(); // empêche l’envoi du formulaire si invalide
+            }
+        });
+    });
 });
-
-function verify() {
-    const email = input[0].value.trim();  
-
-    // Reset border color before checking
-    input[0].style.borderColor = "";  // Reset to default border color
-
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        input[0].style.borderColor = "red";  // Set border color to red if invalid
-        return;
-    }
-
-    // If everything is good
-    input[0].style.borderColor = "green";  // Set border color to green
-}
