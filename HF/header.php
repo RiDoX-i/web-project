@@ -25,18 +25,18 @@
                 <a class="nav-link mx-lg-2 active" aria-current="page" href="../main-menu/home.php">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Activités sportives</a>
+                <a class="nav-link mx-lg-2" href="../activities/activities.php">Activités sportives</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Demande de devis</a>
+                <a class="nav-link mx-lg-2" href="../devis/devis.php">Demande de devis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="#">Contact</a>
+                <a class="nav-link mx-lg-2" href="../contact/contact.php">Contact</a>
               </li>
             </ul>
 
             <div class="auth-links text-center mt-3 mt-lg-0">
-              <a class="nav-link mx-lg-2" href="#">Connexion | Inscription</a>
+              <a class="nav-link mx-lg-2" href="../connexion/connexion.php">Connexion | Inscription</a>
             </div>
           </div>
         </div>
