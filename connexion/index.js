@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var password = document.getElementById('password-signup');
   var confirmPassword = document.getElementById('cpassword');
   var adresse = document.getElementById('adress');
-  var ville = document.getElementById('city'); // corrigé
+  var ville = document.getElementById('city'); 
   var codePostal = document.getElementById('cp');
   var condition = document.getElementById('TC');
   var inscriptionBtn = document.getElementById('submit-inscription');
 
   function checkformSignup(event) {
-    // Supprimer le message d'erreur existant s'il y en a un
+    
     var existingError = document.querySelector('.error-message');
     if (existingError) {
       existingError.remove();
@@ -63,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var errorMessage = document.createElement('p');
       errorMessage.textContent = "Veuillez remplir tous les champs";
       errorMessage.style.color = 'red';
-      errorMessage.className = 'error-message'; // pour pouvoir le cibler
-      var parent = document.getElementById('block2') || document.body; // fallback
+      errorMessage.className = 'error-message'; 
+      var parent = document.getElementById('block2') || document.body;
       parent.appendChild(errorMessage);
       event.preventDefault();
       return false;
