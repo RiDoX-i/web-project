@@ -29,19 +29,14 @@ try {
         }
     }
 
-    if (!$exists) {
+    $_SESSION['email_used'] = $exists; // true if the email is already used
+  
+    
+    if (!$exists) { // the email is never used
         $sql = "INSERT INTO Account (nom, prenom, genre, datens, CP, ville, adresse, email, mot_de_passe)
                 VALUES ('$name', '$fname', '$gender', '$dataNS', '$cp', '$city', '$adress', '$email', '$password')";
         
         $stmt = $connexion->exec($sql);
-
-        if ($stmt) {
-            echo "Account has been created successfully!";
-        } else {
-            echo "Failed to create account.";
-        }
-    } else {
-        echo "An account already exists with the same email.";
     }
 
 } catch(PDOException $e) {

@@ -77,3 +77,12 @@ input:valid, select:valid {
   background-color: #ffe6e6;
 }
 
+
+.error_email_already_exists{
+  text-align: center;
+  color : rgb(0, 0, 0);
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #ff0404;
+}
+

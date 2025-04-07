@@ -32,6 +32,13 @@
             <br><br>
             <h6>Pas de compte ?</h6>
             <h3>Créez votre compte</h3>
+
+          <!-- display error if the email is already used -->
+            <?php if (isset($_SESSION['email_used']) && $_SESSION['email_used']): ?>
+             <h4 class ="error_email_already_exists">Email Indiqué est déja utilisé par un autre utilisateur</h4>
+            <?php endif; ?>
+
+            
             <form action="signup.php" method="post">
                 <label for="name">Nom</label><br>
                 <input type="text" id="name" name="name" required> <br>
