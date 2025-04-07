@@ -3,7 +3,7 @@ body{
     background-image: url("./img.jpg");
 }
 .form-container{
-    background-color: rgba(0, 0, 0,0.9);
+    background-color: rgba(34, 34, 34, 0.9);
     margin-top: 15px;
     margin-bottom: 50px;
     align-items: center;
