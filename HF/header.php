@@ -5,7 +5,7 @@ session_start();
   <div class="container-fluid">
 
     <!-- Logo and Site Name -->
-   <a class="navbar-brand" href="#">
+   <a class="navbar-brand">
   <img src="/web-project/HF/logo.png" alt="Sportify Logo" width="40" height="40">
   <span>Sportify</span>
 </a>
@@ -37,7 +37,7 @@ session_start();
       <ul class="navbar-nav ms-auto">
         <?php if (isset($_SESSION['username'])): ?>  
           <li class="nav-item">
-            <a class="nav-link header-selectors" href="#"><?= $_SESSION['username'] ?></a>
+            <a class="nav-link header-selectors"><?= $_SESSION['username'] ?></a>
           </li>
         <?php endif; ?>
         <li class="nav-item">
