@@ -58,26 +58,6 @@ h6 {
   color: #bbb;
 }
 
-
-/* Style pour un champ invalide */
-input:invalid, select:invalid {
-  border: 2px solid #e53935; /* rouge vif */
-  background-color: rgba(229, 57, 53, 0.1); /* fond légèrement rouge */
-}
-
-/* Pour enlever le rouge quand c’est corrigé */
-input:valid, select:valid {
-  border: 1px solid #4caf50; /* vert clair */
-  background-color: rgba(76, 175, 80, 0.05);
-}
-
-
-.is-invalid {
-  border: 2px solid red !important;
-  background-color: #ffe6e6;
-}
-
-
 .error_email_already_exists{
   text-align: center;
   color : rgb(0, 0, 0);
