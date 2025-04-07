@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="../HF/HF.css">
     <link rel="stylesheet" href="./home.css">
     <title>Home page</title>
@@ -157,11 +156,11 @@
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-    <!-- Footer -->
-    <?php require("../HF/footer.php") ?>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Footer -->
+ <?php require("../HF/footer.php") ?>
 
 </body>
+   
+
 </html>
