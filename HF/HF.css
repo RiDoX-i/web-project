@@ -1,0 +1,18 @@
+.header-selectors{
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+  }
+  .navbar-brand img {
+    margin-right: 0.5rem;
+  }
+
+

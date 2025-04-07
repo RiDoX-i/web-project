@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./activities.css">
     <link rel="stylesheet" href="../HF/HF.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="../HF/HF.css" rel="stylesheet">
+
     <title>Activities page</title>
 </head>
 <body>
