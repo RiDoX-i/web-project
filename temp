@@ -1,6 +1,3 @@
-<?php 
-    session_start();
-?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -21,28 +18,26 @@
 
       
       <li class="nav-item active">
-        <a class="nav-link" href="../main-menu/home.php">Accueil</a>
+        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
       </li>
 
 
       <li class="nav-item">
-        <a class="nav-link" href="../activities/activities.php">Nos Cours</a>
+        <a class="nav-link" href="#">Nos Cours</a>
       </li>
 
 
       <li class="nav-item">
-        <a class="nav-link" href="../devis/devis.php">Demande de Devis</a>
+        <a class="nav-link" href="#">Demande de Devis</a>
       </li>
 
 
 
       <li class="nav-item">
-        <a class="nav-link" href="../contact/contact.php">Contact</a>
+        <a class="nav-link" href="#">Contact</a>
       </li>
-
-
-    <!-- Only show username if `login_success` is set and true -->
-    <li class="nav-item">
+    <!-- Only show username if `login_success` is set and true -
+    <li class="nav-item mx-5">
         <?php if (isset($_SESSION['username'])): ?>  
           <a class="nav-link" href="#" >
           <?= $_SESSION['username'] ?>
@@ -51,14 +46,19 @@
     </li>
 
     <li class="nav-item">
-  <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
-    <a href="../connexion/connexion.php" class="nav-link">Connexion | Inscription</a>
-  <?php else: ?>
-    <a href="../connexion/disconnect.php" class="nav-link">Se Déconnecter</a>
-  <?php endif; ?>
-</li>
-
+      <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
+        <a href="../connexion/connexion.php" class="nav-link">Connexion | Inscription</a>
+        <?php else: ?>
+        <a href="../connexion/disconnect.php" class="nav-link">Se Déconnecter</a>
+    </li>
+        -->
+      <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
  
+
+      <?php endif; ?>
 
     </ul>
     

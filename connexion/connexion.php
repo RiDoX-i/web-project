@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+<header>
     <?php require("../HF/header.php") ?>
+</header>
 
 <div class="container">
     <!-- Login form -->

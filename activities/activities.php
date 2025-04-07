@@ -9,12 +9,17 @@
     <title>Activities page</title>
 </head>
 <body>
+  <header>
+  <?php         require("../HF/header.php") ;
+  ?>
+  <header>
+
   <?php 
-        require("../HF/header.php") ;
         require("./data.php"); 
         require("set max memebers.php"); 
         require("remaining places.php");
   ?>
+
   <main>
   <!-- Hero Section -->
   <div class="container-fluid py-5 text-white text-center" id="hero-activities">
