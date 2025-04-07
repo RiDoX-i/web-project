@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     function validateForm(form) {
       let valid = true;
   
@@ -36,4 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
-  
+  */
+
+ var connexionBtn=document.getElementById('submit-connexion');
+ var inscriptionBtn=document.getElementById('submit-inscription');
+
+ var name=document.getElementById('name');
+ var email=document.getElementById('email');
+ var password=document.getElementById('password');
+ var genre=document.getElementById('genre');
+ var confirmPassword=document.getElementById('confirm-password');
+ var adresse=document.getElementById('adresse');
+ var ville=document.getElementById('ville');
+ var codePostal=document.getElementById('code-postal');
+ var condition=document.getElementById('condition');
