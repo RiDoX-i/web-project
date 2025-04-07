@@ -29,13 +29,17 @@
     <div class="row">
         <div id="block2" class="col-sm-3 offset-md-5">
             <!-- SignUp form -->
-            <br><br>
             <h6>Pas de compte ?</h6>
             <h3>Créez votre compte</h3>
 
           <!-- display error if the email is already used -->
             <?php if (isset($_SESSION['email_used']) && $_SESSION['email_used']): ?>
              <h4 class ="error_email_already_exists">Email Indiqué est déja utilisé par un autre utilisateur</h4>
+            <?php endif; ?>
+
+          <!-- display information that the account has been created -->
+            <?php if (isset($_SESSION['email_used']) && !$_SESSION['email_used']): ?>
+             <h4 class ="account_creation_successfully">Votre compte a été crée avec succès vous pouvez dès maintenant vous connectez</h4>
             <?php endif; ?>
 
             
