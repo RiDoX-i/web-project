@@ -82,31 +82,3 @@ input, textarea, select {
 .buttons:hover {
   background-color: #ff9800; /* Orange when hovered */
 }
-
-footer {
-  background-color: #111;
-  color: white;
-  padding: 15px 0;
-  text-align: center;
-  width: 100%;
-  margin-top: auto; /* Keep the footer at the bottom */
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-footer a:hover {
-  color: #ff9800;
-}
-
-.footer i {
-  font-size: 1.2rem;
-  margin-right: 5px;
-}

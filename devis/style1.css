@@ -1,4 +1,3 @@
-/* =================== GLOBAL =================== */
 body, html {
     margin: 0;
     padding: 0;
@@ -6,34 +5,28 @@ body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url("img.jpg"); /* Remplace avec ton image */
-    background-repeat: no-repeat;
+    background-image: url("img.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: white;
 }
 
-/* =================== HEADER FIXE =================== */
 header {
-    height: 80px; /* Ajustement pour un design plus compact */
-    background-color: #000; /* Fond noir */
+    height: 80px;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* S'assurer qu'il est au-dessus du contenu */
-    border-radius: 0; /* Supprime les bords arrondis */
+    z-index: 1000;
 }
 
-/* =================== NAVIGATION =================== */
 .nav-link, .login a {
-    font-weight: 200; /* Texte ultra-fin */
     font-size: 1.2rem;
     color: white !important;
     text-decoration: none;
@@ -41,24 +34,21 @@ header {
 }
 
 .nav-link:hover, .login a:hover {
-    color: #f0a500 !important; /* Effet orange au survol */
+    color: #f0a500 !important;
 }
 
-/* =================== CONTENU PRINCIPAL =================== */
 main {
-    flex: 1; /* Permet au contenu de s'étendre */
-    margin-top: 100px; /* Laisse l’espace sous le header */
-    padding-bottom: 50px; /* Espace pour éviter que le footer ne colle */
+    flex: 1;
+    margin-top: 0; /* Remove the margin to eliminate the extra space */
+    padding-bottom: 50px;
 }
 
-/* =================== FORMULAIRE =================== */
 .form-container {
     max-width: 500px;
-    background-color: rgba(34, 34, 34, 0.9); /* Fond semi-transparent */
+    background-color: rgba(34, 34, 34, 0.9);
     padding: 20px;
-    margin: auto;
+    margin: 0 auto; /* Center the form */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 form {
@@ -70,7 +60,6 @@ input, textarea, select {
     background-color: #333;
     color: white;
     border: 1px solid #555;
-    border-radius: 5px;
     padding: 8px;
     margin-bottom: 10px;
 }
@@ -79,47 +68,23 @@ textarea {
     resize: none;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
 .buttons {
-    background-color: #ff9800;
-    color: #fff;
+    background-color: #333;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    width: auto;
 }
 
 .buttons:hover {
-    background-color: #d88c00;
-}
-
-/* =================== FOOTER =================== */
-footer {
-    background-color: #111;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-    width: 100%;
-    margin-top: auto; /* Permet de garder le footer en bas */
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-}
-
-footer a:hover {
-    color: #ff9800;
-}
-
-/* Icônes dans le footer */
-.footer i {
-    font-size: 1.2rem;
-    margin-right: 5px;
+    background-color: #ff9800;
 }
