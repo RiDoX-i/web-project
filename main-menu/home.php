@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="headertest.css">
     <link rel="stylesheet" href="../HF/index.css">
     <link rel="stylesheet" href="./home.css">
     <title>Home page</title>
 </head>
 <body>
 <!--HEADER-->
-    <?php require("../HF/header.php")?>
+    <?php require("headertest.php")?>
 <!--/HEADER-->
 
 <main>
