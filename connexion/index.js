@@ -1,52 +1,110 @@
-/*document.addEventListener("DOMContentLoaded", () => {
-    function validateForm(form) {
-      let valid = true;
-  
-      const fields = form.querySelectorAll("input:not([type=submit]):not([type=hidden]), select");
+
+//login 
+var connexionBtn = document.getElementById('submit-connexion');
+var emailLogin = document.getElementById('login-email');
+var loginPassword = document.getElementById('login-password');
+
+
+var regexmail="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+function checkform(event) {
+  if (emailLogin.value === "" || loginPassword.value === "") {
+    var errorMessage =document.createElement('p');
+    errorMessage.textContent = "Veuillez remplir tous les champs";
+    errorMessage.style.color ='red';
+    var parent=document.getElementById('block1');
+    parent.appendChild(errorMessage);
+    event.preventDefault();
+    return false;
+  }
+
+  else if (!emailLogin.value.match(regexmail)) {
+    var errorMessage = document.createElement('p');
+    errorMessage.textContent = "Adresse email non valide";
+    errorMessage.style.color ='red';
+    var parent=document.getElementById('block1');
+    parent.appendChild(errorMessage);
+    event.preventDefault();
+    return false;}
+}
+document.addEventListener('DOMContentLoaded', function () {
+  connexionBtn.addEventListener('click', checkform);
+});
+
+/*Signup*/
+
+  var name = document.getElementById('name');
+  var prenom = document.getElementById('fname');
+  var genre = document.getElementById('gender');
+  var date = document.getElementById('birth-date');
+  var emailSign = document.getElementById('email-signup');
+  var password = document.getElementById('password-signup');
+  var confirmPassword = document.getElementById('cpassword');
+  var adresse = document.getElementById('adress');
+  var ville = document.getElementById('city'); // corrigé
+  var codePostal = document.getElementById('cp');
+  var condition = document.getElementById('TC');
+  var inscriptionBtn = document.getElementById('submit-inscription');
+
+  function checkformSignup(event) {
+    // Supprimer le message d'erreur existant s'il y en a un
+    var existingError = document.querySelector('.error-message');
+    if (existingError) {
+      existingError.remove();
+    }
+
+    if (
+      emailSign.value === "" ||
+      password.value === "" ||
+      confirmPassword.value === "" ||
+      adresse.value === "" ||
+      ville.value === "" ||
+      codePostal.value === ""
+    ) {
+      var errorMessage = document.createElement('p');
+      errorMessage.textContent = "Veuillez remplir tous les champs";
+      errorMessage.style.color = 'red';
+      errorMessage.className = 'error-message'; // pour pouvoir le cibler
+      var parent = document.getElementById('block2') || document.body; // fallback
+      parent.appendChild(errorMessage);
+      event.preventDefault();
+      return false;
+    }
+
+    if (password.value !== confirmPassword.value) {
+      var errorMessage = document.createElement('p');
+      errorMessage.textContent = "Les mots de passe ne correspondent pas";
+      errorMessage.style.color = 'red';
+      errorMessage.className = 'error-message';
+      var parent = document.getElementById('block2') || document.body;
+      parent.appendChild(errorMessage);
+      event.preventDefault();
+      return false;
+    }
+
+    if (!condition.checked) {
+      var errorMessage = document.createElement('p');
+      errorMessage.textContent = "Vous devez accepter les conditions";
+      errorMessage.style.color = 'red';
+      errorMessage.className = 'error-message';
+      var parent = document.getElementById('block2');
+      parent.appendChild(errorMessage);
+      event.preventDefault();
+      return false;
+    }
+
+    if (!emailSign.value.match(regexmail)) {
+      var errMessage= document.createElement("p")
+      errMessage.textContent="Mauvais format d'email! Essayez avec un format tel que Votrenom@example.com";
+      errMessage.style.color ='red';
+      var parent = document.getElementById('block2') ;
+      parent.appendChild(errMessage);
+      event.preventDefault();
+      event.preventDefault();
+      return false;
       
-      fields.forEach(field => {
-        field.classList.remove("input-error");
-  
-        if ((field.type === "checkbox" && !field.checked) || field.value.trim() === "") {
-          field.classList.add("input-error");
-          valid = false;
-        }
-      });
-  
-      return valid;
     }
-  
-    const loginForm = document.getElementById("login-form");
-    if (loginForm) {
-      loginForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Empêche le submit automatique
-        if (validateForm(loginForm)) {
-          loginForm.submit(); // Submit manuel si tout est valide
-        }
-      });
-    }
-  
-    const signupForm = document.getElementById("signup-form");
-    if (signupForm) {
-      signupForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        if (validateForm(signupForm)) {
-          signupForm.submit();
-        }
-      });
-    }
-  });
-  */
+  }
 
- var connexionBtn=document.getElementById('submit-connexion');
- var inscriptionBtn=document.getElementById('submit-inscription');
-
- var name=document.getElementById('name');
- var email=document.getElementById('email');
- var password=document.getElementById('password');
- var genre=document.getElementById('genre');
- var confirmPassword=document.getElementById('confirm-password');
- var adresse=document.getElementById('adresse');
- var ville=document.getElementById('ville');
- var codePostal=document.getElementById('code-postal');
- var condition=document.getElementById('condition');
+  document.addEventListener('DOMContentLoaded', function () {
+  inscriptionBtn.addEventListener('click', checkformSignup);
+});
