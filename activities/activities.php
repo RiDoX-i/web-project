@@ -175,10 +175,9 @@
     </div>
   </div>
           <!--crer un compte avant inscrption cours--->
-          <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
-
+  <?php if (!isset($_SESSION['login_success']) || !$_SESSION['login_success']): ?>
   <div class="d-flex justify-content-center align-items-center ">
-    <button class="btn btn-light btn-lg">Créer ou connecter a votre compte pour s'incrire aux cours</button>
+    <a href="../connexion/connexion.php" class="btn btn-light btn-lg">Créer ou connecter a votre compte pour s'incrire aux cours</a>
   </div>
   <?php endif; ?>
           
