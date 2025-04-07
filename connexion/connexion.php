@@ -11,9 +11,7 @@
     <link href="../HF/HF.css" rel="stylesheet">
 </head>
 <body>
-<header>
     <?php require("../HF/header.php") ?>
-</header>
 
 <div class="container">
     <!-- Login form -->
@@ -25,7 +23,7 @@
                 <input type="email" id="login-email" name="email" required> <br>
                 <label for="login-password">Mot de passe </label><br>
                 <input type="password" id="login-password" name="password" required> <br>
-                <input type="submit" class="buttons" value="Se connecter">
+                <input type="submit" id="submit-connexion" class="buttons" value="Se connecter">
             </form>
         </div>
     </div>
@@ -89,7 +87,7 @@
                     </label>
                 </div>
                 
-                <input type="submit" class="buttons" value="Crée le compte">
+                <input type="submit" id="submit-inscription" class="buttons" value="Crée le compte">
             </form>
         </div>
     </div>
