@@ -7,6 +7,7 @@ $dataBaseName = "Sportify_data_base";
 try {
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    session_start();
 
     $name = $_POST["name"];
     $fname = $_POST["fname"];
@@ -17,6 +18,7 @@ try {
     $adress = $_POST["adress"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+
 
     $reponse = $connexion->query("SELECT * FROM account");
     $exists = false;
@@ -37,6 +39,8 @@ try {
                 VALUES ('$name', '$fname', '$gender', '$dataNS', '$cp', '$city', '$adress', '$email', '$password')";
         
         $stmt = $connexion->exec($sql);
+
+        header("Location: http://localhost/web-project/connexion/connexion.php");
     }else {
         header("Location: http://localhost/web-project/connexion/connexion.php");
     }
