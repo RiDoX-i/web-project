@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="recap.css">
-    <link rel="stylesheet" href="../../HF/index.css">
+    <link rel="stylesheet" href="../HF/index.css">
 
     <title>courses-report</title>
 </head>
 </p>
 <body>
-    <?php require("../../HF/header.php") ;?>
+    <?php require("../HF/header.php") ;?>
 
     <main>
         <div class="d-flex justify-content-center align-items-center vh-100">
@@ -32,7 +32,7 @@
     </main>
 
     <?php 
-        require("../../HF/footer.php"); 
+        require("../HF/footer.php"); 
         unset($_SESSION['lvl']); // lvl must be unset after each recap else the user will keep seeing it each time he reserves a season
         var_dump($_SESSION);
     ?>

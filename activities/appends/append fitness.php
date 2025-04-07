@@ -33,7 +33,7 @@ try {
             $_SESSION['date_res'] = $currentDate;
 
             $_SESSION["registration_success_max_member"] = true;
-            header("Location: http://localhost/web-project/activities/recap/recap.php");
+            header("Location: http://localhost/web-project/recap/recap.php");
         } else { // User already registered to the course
             header("Location: http://localhost/web-project/activities/activities.php");
         }

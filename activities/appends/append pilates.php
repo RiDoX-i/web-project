@@ -37,7 +37,7 @@ try {
             $_SESSION['date_res'] = $currentDate;
             $_SESSION['lvl'] = $_POST['lvl'];
     
-            header("Location: http://localhost/web-project/activities/recap/recap.php");
+            header("Location: http://localhost/web-project/recap/recap.php");
         } else { // User already registered for the course
             header("Location: http://localhost/web-project/activities/activities.php");
         }
