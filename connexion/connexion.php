@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="../HF/HF.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="connexion.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../HF/HF.css" rel="stylesheet">
 </head>
@@ -99,7 +99,7 @@
         </div>
     </div>
 </div>
-<script src="index.js"></script>
+<script src="connexion.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
