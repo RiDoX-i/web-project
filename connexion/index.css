@@ -58,7 +58,7 @@ h6 {
   color: #bbb;
 }
 
-.error_email_already_exists{
+.error{
   text-align: center;
   color : rgb(0, 0, 0);
   font-family: "Open Sans";

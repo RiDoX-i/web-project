@@ -25,6 +25,13 @@
                 <input type="password" id="login-password" name="password" required> <br>
                 <input type="submit" id="submit-connexion" class="buttons" value="Se connecter">
             </form>
+    
+            <?php if (isset($_SESSION['login_success']) && !$_SESSION['login_success']): ?>
+                <p class ="error">L'email ou le mots de passe n'est pas correcte</p>
+            <?php unset($_SESSION['login_success']);
+             endif; 
+            ?>
+            
         </div>
     </div>
 
@@ -36,7 +43,7 @@
 
           <!-- display error if the email is already used -->
             <?php if (isset($_SESSION['email_used']) && $_SESSION['email_used']): ?>
-             <h4 class ="error_email_already_exists">Email Indiqué est déja utilisé par un autre utilisateur</h4>
+             <h4 class ="error">Email Indiqué est déja utilisé par un autre utilisateur</h4>
             <?php  endif; ?>
 
           <!-- display information that the account has been created -->

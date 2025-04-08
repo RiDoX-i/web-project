@@ -29,6 +29,7 @@ try {
         }
     }
 
+
     if ($_SESSION['login_success']) {
         header("Location: http://localhost/web-project/main-menu/home.php");
     } else {
