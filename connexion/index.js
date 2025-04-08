@@ -1,34 +1,38 @@
-
-//login 
 var connexionBtn = document.getElementById('submit-connexion');
 var emailLogin = document.getElementById('login-email');
 var loginPassword = document.getElementById('login-password');
+var regexmail = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 
-
-var regexmail="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 function checkform(event) {
-  if (emailLogin.value === "" || loginPassword.value === "") {
-    var errorMessage =document.createElement('p');
+  document.querySelectorAll('#block1 .error').forEach(function(err) {
+    err.remove();
+  });
+
+  if (!emailLogin.value || !loginPassword.value) {
+    var errorMessage = document.createElement('p');
     errorMessage.textContent = "Veuillez remplir tous les champs";
-    errorMessage.style.color ='red';
-    var parent=document.getElementById('block1');
-    parent.appendChild(errorMessage);
+    errorMessage.style.color = 'red';
+    errorMessage.className = 'error';
+    document.querySelector('#block1').appendChild(errorMessage);
     event.preventDefault();
     return false;
   }
 
-  else if (!emailLogin.value.match(regexmail)) {
+  if (!emailLogin.value.match(regexmail)) {
     var errorMessage = document.createElement('p');
     errorMessage.textContent = "Adresse email non valide";
-    errorMessage.style.color ='red';
-    var parent=document.getElementById('block1');
-    parent.appendChild(errorMessage);
+    errorMessage.style.color = 'red';
+    errorMessage.className = 'error';
+    document.querySelector('#block1').appendChild(errorMessage);
     event.preventDefault();
-    return false;}
+    return false;
+  }
 }
+
 document.addEventListener('DOMContentLoaded', function () {
   connexionBtn.addEventListener('click', checkform);
 });
+
 
 /*Signup*/
 
