@@ -56,7 +56,6 @@
             <p class="card-text">
               Type cours: collectif <br>
               Durée: 1h <br>
-              Niveau: débutant, intermédiaire, avancé <br>
               Encadré par: Michelle Legrand <br>
               Nombre de participants: <?= $_SESSION['max_member_yoga'] ?><br>
               Places restantes: <?= $_SESSION['remaining_places_yoga']?><br>
@@ -87,7 +86,6 @@
             <p class="card-text">
             Type cours: collectif <br>
             Durée: 1h <br>
-            Niveau: débutant, intermédiaire, avancé <br>
             Encadré par: Marion May <br>
             Nombre de participants: <?= $_SESSION['max_member_pilates'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_pilates']?><br>
@@ -118,7 +116,9 @@
             Encadré par: Camille Lemont <br>
             Nombre de participants: <?= $_SESSION['max_member_musculation'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_musculation']?><br>
-            Côut de la scéance: <br>
+            Exigence: Aucune <br>
+            Niveau: Tous les niveaux confondus<br>
+            Côut de la scéance: <br><br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="appends/append musculation.php" class="btn btn-primary w-100">S'inscrire</a>
@@ -136,7 +136,8 @@
             Encadré par: Amy Taylor <br>
             Nombre de participants: <?= $_SESSION['max_member_cycling'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_cycling']?><br>
-            Exigences: vélo d'appartement<br>
+            Exigence: vélo d'appartement<br>
+            Niveau: Tous les niveaux confondus<br>
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
@@ -155,6 +156,8 @@
             Encadré par: Laura Jones <br>
             Nombre de participants: <?= $_SESSION['max_member_fitness'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_fitness']?><br>
+            Exigence: Aucune<br>
+            Niveau: Tous les niveaux confondus<br>
             Côut de la scéance: <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
@@ -172,7 +175,9 @@
             Durée: indéfinie <br>
             suivi: hebdomadaire <br>
             Assuré par: Laura Marins <br>
-            Côut de la scéance: <br>
+            Niveau: Tous les niveaux confondus<br>
+            Exigence: Remplir le formulaire<br>
+            Côut de la scéance: <br><br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="../devis/devis.php" class="btn btn-primary w-100">S'inscrire</a>
