@@ -52,28 +52,28 @@
             <div class="model-service text-center">
               <img src="../img/corps-esprit.jpg" alt="">
               <h3>Diversité d'activités</h3>
-              <p>Libérez votre énergie...</p>
+              <p>Plongez dans un univers varié d'activités stimulantes, soigneusement conçues pour dynamiser votre corps et inspirer votre esprit à tout moment</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
               <img src="../img/programme.jpg" class="img-fluid" alt="">
               <h3>Programmes personnalisés</h3>
-              <p>Parce que chaque objectif est unique, votre programme l’est aussi : 100 % adapté à vos besoins et à votre rythme.</p>
+              <p>Profitez de programmes sur mesure, adaptés à vos objectifs et à votre rythme.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
               <img src="../img/service-suivie.jpg" class="img-fluid" alt="">
               <h3>Suivi de vos progrès</h3>
-              <p>Restez motivé(e) en mesurant vos progrès réels, encadré(e) par nos coachs dédiés.</p>
+              <p>Restez engagé grâce à un suivi régulier de vos performances, mesurant vos progrès et ajustant vos entraînements pour maintenir motivation</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
               <img src="../img/service-nutrition (2).jpg" class="img-fluid" alt="">
               <h3>Conseils nutritionnels</h3>
-              <p>Optimisez vos résultats grâce à des conseils nutritionnels simples, efficaces et adaptés à votre style de vie.</p>
+              <p>Profitez de conseils nutritionnels pratiques pour booster votre énergie et équilibrer votre alimentation</p>
             </div>
           </div>
         </div>
