@@ -21,8 +21,8 @@
       <div class="container-fluid" id="hero-container">
         <div class="row">
           <div class="col-lg-4" id="hero-text">
-            <h1>RELEVEZ UN NOUVEAU <span>CHALLENGE</span> AVEC</h1>
-            <h2><span>Sportify</span></h2>
+            <h1>RELEVEZ UN NOUVEAU <span>CHALLENGE</span> AVEC </br> <span id="sportify-name">Sportify</span></h1>
+            
           </div>
         </div>
       </div>
