@@ -88,7 +88,6 @@
 
     <script src="alertes.js">
     </script>
-    
 
 </body>
 </html>

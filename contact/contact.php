@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../HF/HF.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link href="../HF/HF.css" rel="stylesheet">
+  <script src="contact.js"></script>
 
 </head>
 <body>
@@ -49,6 +50,7 @@
   </main>
 
   <?php require("../HF/footer.php") ?>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
