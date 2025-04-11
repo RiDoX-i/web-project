@@ -20,7 +20,7 @@ function checkform(event) {
 
   if (!emailLogin.value.match(regexmail)) {
     var errorMessage = document.createElement('p');
-    errorMessage.textContent = "Adresse email non valide";
+    errorMessage.textContent = "Adresse email invalide, respectez le format ( exemple@domaine.com )";
     errorMessage.style.color = 'red';
     errorMessage.className = 'error';
     document.querySelector('#block1').appendChild(errorMessage);
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!emailSign.value.match(regexmail)) {
       var errMessage= document.createElement("p")
-      errMessage.textContent="Mauvais format d'email! Essayez avec un format tel que Votrenom@example.com";
+      errMessage.textContent="Adresse email invalide, respectez le format ( exemple@domaine.com )";
       errMessage.style.color ='red';
       var parent = document.getElementById('block2') ;
       parent.appendChild(errMessage);
