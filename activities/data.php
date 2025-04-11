@@ -57,7 +57,6 @@ try {
 
     ";
 
-    // Execute the SQL to create tables
     $connexion->exec($sql);
 
     // Check if any records already exist in the Max_members table
