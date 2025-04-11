@@ -24,7 +24,6 @@ try {
             $_SESSION['login_success'] = true;
             $_SESSION['id_user'] = $donnees['id'];
             $_SESSION['username'] = $donnees["prenom"];
-            $_SESSION['Fname'] = $donnees["nom"];
             break;
         }
     }
