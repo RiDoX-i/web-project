@@ -23,7 +23,6 @@ try {
             $_SESSION["registration_success_max_member"] = true;
             $currentDate = date('Y-m-d');
             
-            // Escape the variables to prevent SQL injection
             $id_user = $_SESSION['id_user'];
             $currentDate = $connexion->quote($currentDate);
             
