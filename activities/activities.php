@@ -12,10 +12,10 @@
     <title>Activities page</title>
 </head>
 <body>
-  <header>
+ 
   <?php         require("../HF/header.php") ;
   ?>
-  <header>
+  
 
   <?php 
         require("./data.php"); 
