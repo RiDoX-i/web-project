@@ -40,10 +40,8 @@ try {
         
         $stmt = $connexion->exec($sql);
 
-        header("Location: http://localhost/web-project/connexion/connexion.php");
-    }else {
-        header("Location: http://localhost/web-project/connexion/connexion.php");
     }
+    header("Location: http://localhost/web-project/connexion/connexion.php");
 
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
