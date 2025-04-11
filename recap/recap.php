@@ -12,7 +12,6 @@
 
     <title>Récapitulatif d'inscription</title>
 </head>
-</p>
 <body>
     <?php require("../HF/header.php") ;?>
 
