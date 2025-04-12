@@ -34,7 +34,8 @@
 }
 
 .btn:hover {
-  background-color: #ff8e04;
+  background-color: rgb(255, 166, 0);
+    
   color: rgb(0, 0, 0);
 }
 
