@@ -35,10 +35,10 @@
     </div>
   </div>
 <!-- max memebers is reached-->
-  <?php if (isset($_SESSION['registration_success_max_memeber']) && !$_SESSION['registration_success_max_memeber']): ?>
+  <?php if (isset($_SESSION['registration_success_max_member']) && !$_SESSION['registration_success_max_member']): ?>
     <h3 class="error_message_reservation">Il n'y a plus de place disponible pour ce cours</h3>
     <?php endif; 
-    $_SESSION['registration_success_max_memeber']=true; // reset?>
+    $_SESSION['registration_success_max_member']=true; // reset?>
 
 <!-- already subsribed to this course-->
     <?php if (isset($_SESSION['is_subscribed']) && $_SESSION['is_subscribed']): ?>
@@ -201,9 +201,9 @@
 </main>
 
         
-  <?php require("../HF/footer.php");
-        require("./data.php"); 
-        ?>
+  <?php 
+        require("../HF/footer.php");
+  ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

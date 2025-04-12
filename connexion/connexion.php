@@ -94,7 +94,7 @@
                     </label>
                 </div>
                 
-                <input type="submit" id="submit-inscription" class="buttons" value="Crée le compte">
+                <input type="submit" id="submit-inscription" class="buttons" value="Créer le compte">
             </form>
         </div>
     </div>

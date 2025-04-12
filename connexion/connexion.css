@@ -36,7 +36,7 @@ input, textarea, select {
 }
 
 .buttons:hover {
-  background-color: #ff9800;
+  background-color: rgb(255, 166, 0);
 }
 
 

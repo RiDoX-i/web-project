@@ -40,19 +40,7 @@ main {
   font-style: italic;
 }
 
-#hero-text h2{
-    margin-top: 10px;
-    padding:10px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 3rem;
-}
 #hero-text h1 span{
-    color: rgb(255, 136, 0);
-}
-
-#hero-text h2 span{
-    font-style: italic;
     color: rgb(255, 136, 0);
 }
 
@@ -131,8 +119,8 @@ justify-content: center;
 }
 
  .model-coachs {
-  background-color: var(--dark-bg);
-  color: var(--text-light);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 #testimonies .container{
@@ -149,7 +137,5 @@ justify-content: center;
   #hero-text h1 {
     font-size: 2rem;
   }
-  #hero-text h2 {
-    font-size: 1.5rem;
-  }
+
 }
