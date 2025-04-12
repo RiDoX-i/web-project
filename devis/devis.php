@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../HF/HF.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="../HF/HF.css" rel="stylesheet">
-
+    <script src="alertes.js"></script>
 </head>
 <body>
    <header>
@@ -68,12 +68,14 @@
                         <option value="yoga">Yoga</option>
                         <option value="fitness">Fitness</option>
                         <option value="musculation">Musculation</option>
+                        <option value="pilates">Pilates</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="cours_personnalises">Cours personnalisés</option>
                     </select>
                 
-                    <label for="session-count">Nombre de sessions :</label>
-                    <input type="number" id="session-count" name="session-count" required min="1">
+                    <label for="session-count">Nombre de sessions par semaine :</label>
+                    <input type="number" id="session-count" name="session-count" required min="1" max="5">
                 
-                    <!-- Estimation du prix (cachée pour l'utilisateur) -->
                     <input type="hidden" id="price" name="price">
                 
                     <button type="submit" class="buttons">Envoyer la demande</button>
@@ -82,12 +84,8 @@
         </div>
     </main>
 
-    
     <?php require("../HF/footer.php") ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="alertes.js">
-    </script>
-
+    <script src="alertes.js"></script>
 </body>
 </html>

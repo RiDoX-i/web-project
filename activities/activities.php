@@ -12,10 +12,10 @@
     <title>Activities page</title>
 </head>
 <body>
- 
+  <header>
   <?php         require("../HF/header.php") ;
   ?>
-  
+  <header>
 
   <?php 
         require("./data.php"); 
@@ -59,7 +59,7 @@
               Encadré par: Michelle Legrand <br>
               Nombre de participants: <?= $_SESSION['max_member_yoga'] ?><br>
               Places restantes: <?= $_SESSION['remaining_places_yoga']?><br>
-              Côut de la scéance:
+              Côut de la scéance: 15 €
             </p>
             <form action="appends/append yoga.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
@@ -89,7 +89,7 @@
             Encadré par: Marion May <br>
             Nombre de participants: <?= $_SESSION['max_member_pilates'] ?><br>
             Places restantes: <?= $_SESSION['remaining_places_pilates']?><br>
-            Côut de la scéance: <br>
+            Côut de la scéance: 18 € <br>
             </p>
             <form action="appends/append pilates.php" method="POST">
               <label for="niveau-yoga" class="form-label">Sélectionnez votre niveau</label>
@@ -118,7 +118,7 @@
             Places restantes: <?= $_SESSION['remaining_places_musculation']?><br>
             Exigence: Aucune <br>
             Niveau: Tous les niveaux confondus<br>
-            Côut de la scéance: <br><br>
+            Côut de la scéance: 20 € <br><br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="appends/append musculation.php" class="btn btn-primary w-100">S'inscrire</a>
@@ -138,7 +138,7 @@
             Places restantes: <?= $_SESSION['remaining_places_cycling']?><br>
             Exigence: vélo d'appartement<br>
             Niveau: Tous les niveaux confondus<br>
-            Côut de la scéance: <br>
+            Côut de la scéance: 16 € <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="appends/append cycling.php" class="btn btn-primary w-100">S'inscrire</a>
@@ -158,7 +158,7 @@
             Places restantes: <?= $_SESSION['remaining_places_fitness']?><br>
             Exigence: Aucune<br>
             Niveau: Tous les niveaux confondus<br>
-            Côut de la scéance: <br>
+            Côut de la scéance: 17 € <br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="appends/append fitness.php" class="btn btn-primary w-100">S'inscrire</a>
@@ -177,7 +177,7 @@
             Assuré par: Laura Marins <br>
             Niveau: Tous les niveaux confondus<br>
             Exigence: Remplir le formulaire<br>
-            Côut de la scéance: <br><br>
+            Côut de la scéance: Selon le programme choisi (voir formulaire de devis) <br><br>
           </p>
           <?php if (isset($_SESSION['login_success']) && $_SESSION['login_success']): ?>
               <a href="../devis/devis.php" class="btn btn-primary w-100">S'inscrire</a>
