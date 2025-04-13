@@ -27,7 +27,7 @@ main {
 }
 
 #hero-text h1 {
-  font-size: 3rem; 
+  font-size: 4rem; 
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 15px; 
@@ -35,7 +35,7 @@ main {
 }
 
 #sportify-name {
-  font-size: 4rem; 
+  font-size: 5rem; 
   font-weight: bold;
   margin-top: 0; 
   margin-bottom: 20px; 
@@ -65,7 +65,7 @@ main {
 #about-us-text,
 #about-us-txt2 {
   flex: 1 1 300px; 
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   text-align: center; 
 }
