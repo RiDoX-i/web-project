@@ -35,7 +35,7 @@ Merci de nous avoir contacté. L'équipe Sportify.
     $headers .= "From: contact@sportify.com\r\n";
 
     if (mail($to, $subject, $userBody, $headers)) {
-        $adminEmail = "thiernooury433@gmail.com";
+        $adminEmail = "sportify@mail.com";
         $adminSubject = "Nouvelle demande de devis - Sportify";
         $adminMessage = "Le client $fname $name a fait une demande de devis le " . date('d/m/Y à H:i') . ".";
 
