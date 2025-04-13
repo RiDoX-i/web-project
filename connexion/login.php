@@ -7,11 +7,9 @@ $pass = '';
 $dataBaseName = "Sportify_data_base";
 
 try {
-    // Connect to the database
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Get the login credentials
     $login_email = $_POST["email"];
     $login_password = $_POST["password"];
 

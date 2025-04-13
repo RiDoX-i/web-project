@@ -10,7 +10,6 @@ $pass = '';
 $dataBaseName = "Sportify_data_base";
 
 try {
-    // Connect to the database
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -23,7 +22,6 @@ try {
             $_SESSION["registration_success_max_member"] = true;
             $currentDate = date('Y-m-d');
             
-            // Escape the input values to prevent SQL injection
             $id_user = $_SESSION['id_user'];
             $lvl = $_POST['lvl'];
             $currentDate = $connexion->quote($currentDate);

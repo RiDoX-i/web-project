@@ -11,7 +11,6 @@ try {
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    // Create the tables if they don't exist
     $sql = "CREATE TABLE IF NOT EXISTS yoga_res (
         id_reservation INT AUTO_INCREMENT PRIMARY KEY,
         id_user INT,

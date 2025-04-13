@@ -25,7 +25,6 @@ try {
             $currentDate = date('Y-m-d');
             $lvl = $_POST['lvl']; // Get the level from POST data and ensure it's safe
 
-            // Escape input data to avoid SQL injection
             $id_user = $_SESSION['id_user'];
             $lvl = $connexion->quote($lvl);
             $currentDate = $connexion->quote($currentDate);

@@ -24,7 +24,6 @@ try {
 
             $currentDate = date('Y-m-d');
             
-            // Escape input to prevent SQL injection
             $id_user = $_SESSION['id_user'];
             $currentDate = $connexion->quote($currentDate);
 

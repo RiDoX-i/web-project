@@ -6,7 +6,7 @@ session_start();
 
     <!-- Logo and Site Name -->
    <a class="navbar-brand">
-  <img src="/web-project/HF/logo.png" alt="Sportify Logo" width="40" height="40">
+  <img src="../img/logo.png" alt="Sportify Logo" width="40" height="40">
   <span>Sportify</span>
 </a>
 

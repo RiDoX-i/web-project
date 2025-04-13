@@ -10,7 +10,6 @@ $pass = '';
 $dataBaseName = "Sportify_data_base";
 
 try {
-    // Connect to the database
     $connexion = new PDO("mysql:host=$serveur;dbname=$dataBaseName", $login, $pass);
     $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
