@@ -11,8 +11,9 @@
     <link href="../HF/HF.css" rel="stylesheet">
 </head>
 <body>
+    <header>
     <?php require("../HF/header.php") ?>
-
+    </header>
 <div class="container">
     <!-- Login form -->
     <div class="row">
