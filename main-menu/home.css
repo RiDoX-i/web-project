@@ -1,141 +1,255 @@
 main {
-    font-family: "Open Sans", Tahoma, Geneva, Verdana, "sans-serif", system-ui, -apple-system, 'Bebas Neue', sans-serif;
-  }
-
-/* Hero Section */
-#hero-container{
-    background-image:url("../img/bg-accueil.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    color: rgb(255, 255, 255);
-    text-align: center;
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, "sans-serif", system-ui, -apple-system, 'Bebas Neue', sans-serif;
 }
 
-#hero-text{
-    margin:25px 0 0 25px;
-    display: flex;
-    flex-direction: column;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
+#hero-container {
+  background-image: url("../img/bg-accueil.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px; 
 }
 
-#hero-text h1{
-    font-size: 4rem;
-    font-weight:bold;
-    margin-top: 30px;
-    text-align:center;
-    text-align-last: center;
+#hero-text {
+  margin: 0; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
 }
 
-#sportify-name{
-  font-size: 6rem;
-  font-weight:bold;
-  margin-top: 30px;
-  text-align:center;
-  text-align-last: center;
+#hero-text h1 {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px; 
+  text-align: center;
+}
+
+#sportify-name {
+  font-size: 4rem; 
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 20px; 
+  text-align: center;
   color: rgb(255, 136, 0);
   font-style: italic;
 }
 
-#hero-text h1 span{
-    color: rgb(255, 136, 0);
+#hero-text h1 span {
+  color: rgb(255, 136, 0);
 }
 
-/*about us*/
-
-#about-us-container{
-    background-color: rgb(255, 136, 0);
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
+#about-us-container {
+  background-color: rgb(255, 136, 0);
+  padding: 40px 20px; 
 }
 
-#us-row{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
-    margin:15px;
-}
-#about-us-text{
-    color: rgb(252, 252, 252);
-    padding: 20px;
-    text-align: justify;
-}
-#about-us-text h2{
-    font-size:3rem;
-    margin-bottom:5px
+#us-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
 }
 
-#about-us-text p{
-    font-size:1.5rem;
+#about-us-text,
+#about-us-txt2 {
+  flex: 1 1 300px; 
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; 
 }
 
-#about-us-txt2{
-    background-color: rgb(20, 20, 20);
-    
+#about-us-text {
+  color: rgb(252, 252, 252);
+  text-align: justify;
 }
-#about-us-txt2 p{
-    color: rgb(255, 136, 0);
-    padding: 15px;
-    text-align: center;
-    font-size: 4rem;
-    font-weight:bold;
-    font-style: italic;
+
+#about-us-text h2 {
+  font-size: 2.5rem; 
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+#about-us-text p {
+  font-size: 1.1rem;
+  line-height: 1.6; 
 }
 
 
-#services, #coachs, #testimonies {
 
-align-items: center;
-justify-content: center;
-padding: 10px 5px;
+#about-us-txt2 p {
+  color: rgb(255, 136, 0);
+  padding: 20px; 
+  text-align: center;
+  font-size: 2.5rem; 
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 0;
+  background-color: rgb(20, 20, 20);
 }
 
-.model-service, .model-coachs, .model-testimonies {
-  
-align-items: center;
-justify-content: center;
+
+#services,
+#coachs,
+#testimonies {
+  padding: 30px 20px; 
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+#services h2,
+#coachs h2,
+#testimonies h2 {
+  font-size: 2rem; 
+  margin-bottom: 25px;
+}
+
+.row.g-4 {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.col-md-6,
+.col-lg-3,
+.col-lg-4,
+.col-lg-6 {
+  flex-basis: 50%; 
+  max-width: 50%;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex-basis: 25%; 
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex-basis: 33.333%; 
+    max-width: 33.333%;
+  }
+
+  .col-lg-6 {
+    flex-basis: 50%; 
+    max-width: 50%;
+  }
+
+  #about-us-text,
+  #about-us-txt2 {
+    text-align: left; 
+  }
+}
+
+.model-service,
+.model-coachs,
+.model-testimonies {
   background-color: #f8f9fa;
   border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 20px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.model-service:hover, .model-coachs:hover, .model-testimonies:hover {
+.model-service:hover,
+.model-coachs:hover,
+.model-testimonies:hover {
   transform: translateY(-5px);
 }
 
-.model-service img, .model-coachs img, .model-testimonies img {
-  width: 150px;
-  height: 150px;
+.model-service img,
+.model-coachs img,
+.model-testimonies img {
+  width: 100px; 
+  height: 100px;
   border-radius: 50%;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
   object-fit: cover;
 }
 
- .model-coachs {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+.model-coachs {
+  background-color: white;
+  color: black;
 }
 
-#testimonies .container{
-  
+#testimonies .container {
   justify-content: center;
   align-items: center;
 }
+
 .model-testimonies {
   align-items: center;
   justify-content: center;
 }
 
+
 @media (max-width: 768px) {
+  #hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #sportify-name {
+    font-size: 3rem;
+  }
+
+  #us-row {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  #about-us-text,
+  #about-us-txt2 {
+    text-align: center; 
+    margin-bottom: 15px; 
+  }
+
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 576px) {
   #hero-text h1 {
     font-size: 2rem;
   }
 
+  #sportify-name {
+    font-size: 2.5rem;
+  }
+
+  #about-us-text h2 {
+    font-size: 2rem;
+  }
+
+  #about-us-text p {
+    font-size: 1rem;
+  }
+
+  #about-us-txt2 p {
+    font-size: 2rem;
+  }
+
+  .model-service img,
+  .model-coachs img,
+  .model-testimonies img {
+    width: 80px;
+    height: 80px;
+  }
 }

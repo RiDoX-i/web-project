@@ -51,14 +51,14 @@
             <div class="model-service text-center">
               <img src="../img/corps-esprit.jpg" alt="">
               <h3>Diversité d'activités</h3>
-              <p>Plongez dans un univers varié d'activités stimulantes, soigneusement conçues pour dynamiser votre corps et inspirer votre esprit à tout moment</p>
+              <p>Plongez dans un univers varié d'activités stimulantes, soigneusement conçues pour dynamiser votre corps et inspirer votre esprit</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="model-service text-center">
               <img src="../img/programme.jpg" class="img-fluid" alt="">
               <h3>Programmes personnalisés</h3>
-              <p>Profitez de programmes sur mesure, adaptés à vos objectifs et à votre rythme.</p>
+              <p>Profitez de programmes sur mesure, pensés pour s’adapter à vos objectifs personnels, à votre rythme d’apprentissage</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -72,7 +72,7 @@
             <div class="model-service text-center">
               <img src="../img/service-nutrition (2).jpg" class="img-fluid" alt="">
               <h3>Conseils nutritionnels</h3>
-              <p>Profitez de conseils nutritionnels pratiques pour booster votre énergie et équilibrer votre alimentation</p>
+              <p>Profitez de conseils nutritionnels pratiques pour booster votre énergie, renforcer votre bien-être et équilibrer votre alimentation</p>
             </div>
           </div>
         </div>
